@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+@import helper._
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Things</title>
+</head>
+<body>
+<form method ="post">
+    @CSRF.formField
+    Food: <input type = "text" name = "food"><br>
+    Movie: <input type = "text" name = "movie"><br>
+    Language: <input type = "text" name = "language"><br>
+    <input type = "submit" value = "Done">
+</form>
+
+
+</body>
+</html>
