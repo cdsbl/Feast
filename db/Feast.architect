@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>Feast</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="e97a6390-5cc1-447d-9ad2-18794fb8dbf0" name="Chapter" objectType="TABLE" physicalName="Chapter" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="de1ce3cf-7171-4e73-8deb-9c28c3dfb8c5" autoIncrement="true" autoIncrementSequenceName="Chapter_ChapterId_seq" defaultValue="" name="ChapterId" nullable="0" physicalName="ChapterId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="83c2b9fe-7a3e-420a-9f48-e2a4b3dac5db" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter1_seq" defaultValue="" name="Chapter1" nullable="0" physicalName="Chapter1" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="1677d5a5-66f3-41b9-8528-5d4a984ee37d" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter2_seq" defaultValue="" name="Chapter2" nullable="0" physicalName="Chapter2" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="34e08afd-2498-4b95-b966-d7e43a909d4e" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter3_seq" defaultValue="" name="Chapter3" nullable="0" physicalName="Chapter3" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="e3e40e5e-a6fc-4ad1-ba4f-ba1787139c32" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter4_seq" defaultValue="" name="Chapter4" nullable="0" physicalName="Chapter4" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="8d2ff9d3-a755-4873-a563-1b09be65441f" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter5_seq" defaultValue="" name="Chapter5" nullable="0" physicalName="Chapter5" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="ea4858e9-9fa5-4a68-a736-0a36070bec70" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter6_seq" defaultValue="" name="Chapter6" nullable="0" physicalName="Chapter6" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="5317834c-a45f-46d4-b4c8-cdc764ece42a" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter7_seq" defaultValue="" name="Chapter7" nullable="0" physicalName="Chapter7" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="741f7ac2-23c8-45e3-ace8-1ac8228ea71c" autoIncrement="false" autoIncrementSequenceName="Chapter_Chapter8_seq" defaultValue="" name="Chapter8" nullable="0" physicalName="Chapter8" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX11" populated="true" UUID="1f60fe28-f6d6-402a-8b65-55a943ef8f39" clustered="false" name="Chapter_pk" physicalName="chapter_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC12" populated="true" UUID="75c8d60c-1dc7-4b61-a571-dc95d41a4092" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="ChapterId" physicalName="ChapterId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB13" populated="true" UUID="f7415d1f-43d1-4067-a5c2-06fa80101e40" name="Regulations" objectType="TABLE" physicalName="Regulations" >
+   <remarks></remarks>
+   <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL14" populated="true" UUID="7d01d094-fd29-4d27-944c-eaf9b31b8c5a" autoIncrement="true" autoIncrementSequenceName="Regulations_RegulationId_seq" defaultValue="" name="RegulationId" nullable="0" physicalName="RegulationId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="628ee50a-23c0-4904-9fcc-98990f1d1d84" autoIncrement="false" autoIncrementSequenceName="Chapter_ChapterId_seq_1" defaultValue="" name="ChapterId" nullable="0" physicalName="ChapterId" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="bee3c424-3f22-489f-85a4-c5bf4a3acef5" autoIncrement="false" autoIncrementSequenceName="Regulations_RegulationSpecific_seq" defaultValue="" name="RegulationSpecific" nullable="0" physicalName="RegulationSpecific" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB133" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB132" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB134" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX17" populated="true" UUID="8939328e-2453-4a01-b49a-23941460a74b" clustered="false" name="Regulations_pk" physicalName="regulations_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC18" populated="true" UUID="6fa4f047-21ec-4ce0-992b-9a5c5d4d6909" ascendingOrDescending="UNSPECIFIED" column-ref="COL14" name="RegulationId" physicalName="RegulationId" />
+     <index-column id="IDC19" populated="true" UUID="2df8aa79-ed1c-40b5-a0db-7f3e9cc5432d" ascendingOrDescending="UNSPECIFIED" column-ref="COL15" name="ChapterId" physicalName="ChapterId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB20" populated="true" UUID="a49222f8-a5aa-47f5-82f2-5d3181976444" name="RegulationControlPoint" objectType="TABLE" physicalName="RegulationControlPoint" >
+   <remarks></remarks>
+   <folder id="FOLTAB201" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL21" populated="true" UUID="32966681-4cfe-4aae-86b1-e2d1190587ce" autoIncrement="true" autoIncrementSequenceName="RegulationControlPoint_ControlPointId_seq" defaultValue="" name="RegulationControlPointId" nullable="0" physicalName="RegulationControlPointId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="7b0abbae-fb82-47be-9bc4-4916a3d42f58" autoIncrement="false" autoIncrementSequenceName="Regulations_RegulationId_seq_1" defaultValue="" name="RegulationId" nullable="0" physicalName="RegulationId" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="ac59304f-e7fd-4dc1-8121-1d2d0138bcdd" autoIncrement="false" autoIncrementSequenceName="Chapter_ChapterId_seq_2" defaultValue="" name="ChapterId" nullable="0" physicalName="ChapterId" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="9142c78a-9cd4-44c3-8716-a6cba398351a" autoIncrement="false" autoIncrementSequenceName="RegulationControlPoint_ControlPointPeople_seq" defaultValue="" name="ControlPointPeople" nullable="0" physicalName="ControlPointPeople" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="12858808-d651-45a6-8fe5-5389be326ba5" autoIncrement="false" autoIncrementSequenceName="RegulationControlPoint_ControlPointPlace_seq" defaultValue="" name="ControlPointPlace" nullable="0" physicalName="ControlPointPlace" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="8c6470fd-6a8c-4b00-8901-bbbb4a476a87" autoIncrement="false" autoIncrementSequenceName="RegulationControlPoint_ControlPointProcess_seq" defaultValue="" name="ControlPointProcess" nullable="0" physicalName="ControlPointProcess" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB203" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB202" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB204" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX27" populated="true" UUID="e7a79ee6-123a-4a3b-8dfc-beae54e2dcde" clustered="false" name="RegulationControlPoint_pk" physicalName="regulationcontrolpoint_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC28" populated="true" UUID="9bdf069e-faac-4399-a565-8901f04451fb" ascendingOrDescending="UNSPECIFIED" column-ref="COL21" name="RegulationControlPointId" physicalName="RegulationControlPointId" />
+     <index-column id="IDC29" populated="true" UUID="c96a0c36-5f36-4569-bbfd-fd4a705fc815" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="RegulationId" physicalName="RegulationId" />
+     <index-column id="IDC30" populated="true" UUID="485de226-7f18-4bae-89cc-f3d8e0ade9fd" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="ChapterId" physicalName="ChapterId" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB31" populated="true" UUID="d7aaeeeb-8eb8-4217-901c-8fd703403d8d" name="RegulationLevel" objectType="TABLE" physicalName="RegulationLevel" >
+   <remarks></remarks>
+   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL32" populated="true" UUID="7ccbc811-42a8-41d3-9be8-d79ae7464b40" autoIncrement="true" autoIncrementSequenceName="RegulationLevel_RegulationLevelId_seq" defaultValue="" name="RegulationLevelId" nullable="0" physicalName="RegulationLevelId" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="c6064b08-0a6c-400e-9394-1ce30632e773" autoIncrement="false" autoIncrementSequenceName="Regulations_RegulationId_seq_2" defaultValue="" name="RegulationId" nullable="0" physicalName="RegulationId" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="01f83e84-b7e8-4a1f-b19d-42b448ce79a7" autoIncrement="false" autoIncrementSequenceName="Chapter_ChapterId_seq_3" defaultValue="" name="ChapterId" nullable="0" physicalName="ChapterId" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="fd89a108-cc91-4792-92d9-9928815d4f9d" autoIncrement="false" autoIncrementSequenceName="RegulationLevel_RegulationPf_seq" defaultValue="" name="RegulationPf" nullable="0" physicalName="RegulationPf" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="22b35c29-a404-4266-aa13-f655ee9e11a9" autoIncrement="false" autoIncrementSequenceName="RegulationLevel_RegulationP_seq" defaultValue="" name="RegulationP" nullable="0" physicalName="RegulationP" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="ca0b3f85-aea8-469a-8d1d-7cb6d30eeca7" autoIncrement="false" autoIncrementSequenceName="RegulationLevel_RegulationCore_seq" defaultValue="" name="RegulationCore" nullable="0" physicalName="RegulationCore" precision="1000" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX38" populated="true" UUID="795f91d8-9fa1-4655-8255-77c40b4424fb" clustered="false" name="RegulationLevel_pk" physicalName="regulationlevel_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC39" populated="true" UUID="22eca193-1e3f-45af-9454-8b442b652410" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="RegulationLevelId" physicalName="RegulationLevelId" />
+     <index-column id="IDC40" populated="true" UUID="58b3dc26-be0d-48e2-825c-81fd832d5031" ascendingOrDescending="UNSPECIFIED" column-ref="COL33" name="RegulationId" physicalName="RegulationId" />
+     <index-column id="IDC41" populated="true" UUID="1dcf067b-aea9-4357-8597-3f92472788ff" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="ChapterId" physicalName="ChapterId" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL42" populated="true" UUID="b5eb1615-c280-448d-936a-79a39797f65a" deferrability="7" deleteRule="3" fk-table-ref="TAB13" fkCardinality="7" identifying="true" name="Chapter_Regulations_fk" physicalName="chapter_regulations_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP43" populated="true" UUID="344f1459-136a-4f25-b317-b170e026aa54" fk-column-ref="COL15" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL44" populated="true" UUID="5f472308-9a32-4020-befa-2317bae5af0c" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="7" identifying="true" name="Regulations_RegulationLevel_fk" physicalName="regulations_regulationlevel_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP45" populated="true" UUID="0ee990dd-5411-43fc-80c3-09200229ea30" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+    <column-mapping id="CMP46" populated="true" UUID="01d0f3e8-36a1-4ed3-a7ba-99702d90560f" fk-column-ref="COL34" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   </relationship>
+   <relationship id="REL47" populated="true" UUID="7103148f-ef37-4c31-b0ec-b7650a65bea3" deferrability="7" deleteRule="3" fk-table-ref="TAB20" fkCardinality="7" identifying="true" name="Regulations_RegulationControlPoint_fk" physicalName="regulations_regulationcontrolpoint_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP48" populated="true" UUID="0b4dfc8f-3624-447f-8d3f-eb5f2254212e" fk-column-ref="COL22" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+    <column-mapping id="CMP49" populated="true" UUID="ad034c82-2e7b-4ad9-b6a7-a344b5e009fc" fk-column-ref="COL23" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.414213562373095" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="219" y="267" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="685" y="271" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB20" x="683" y="61" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="681" y="435" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL42" pkConnection="0.24571428571428572" fkConnection="0.4936708860759494" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL44" pkConnection="0.5" fkConnection="0.5" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL47" pkConnection="0.5" fkConnection="0.42948717948717946" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

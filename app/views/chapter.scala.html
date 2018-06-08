@@ -1,0 +1,37 @@
+<!doctype html>
+@import helper._
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+
+
+</head>
+<body>
+<h1>CHAPTER Page</h1>
+
+<form action="@routes.ChapterController.postReport" method="POST">
+    @CSRF.formField
+    <input type="submit" value="VIEW REPORT"/>
+</form>
+<br>
+<form action="@routes.HomeController.postHome" method="POST">
+    @CSRF.formField
+    <input type="submit" value="RETURN TO HOME"/>
+</form>
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/assets/lib/jquery/jquery.min.js" ></script>
+<script src="/assets/lib/popper.js/umd/popper.min.js"></script>
+<script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

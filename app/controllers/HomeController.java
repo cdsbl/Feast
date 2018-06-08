@@ -4,22 +4,26 @@ import play.mvc.*;
 
 import views.html.*;
 
-/**
- * This controller contains an action to handle HTTP requests
- * to the application's home page.
- */
+import javax.persistence.Entity;
+
+@Entity
 public class HomeController extends Controller
 {
+    private String name; //FOOD SERVICE NAME
 
-    /**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
-    public Result index()
+    public String getName()
     {
-        return ok(index.render("Your new application is AWESOME!"));
+        System.out.println("RESTAURANT NAME");
+        return name;
+    }
+
+    public Result getHome()
+    {
+        return ok(home.render());
+    }
+    public Result postHome()
+    {
+        return ok(views.html.home.render());
     }
 
 }
