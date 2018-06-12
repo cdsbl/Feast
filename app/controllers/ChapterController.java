@@ -1,50 +1,39 @@
 package controllers;
 
+import models.Chapter;
+import play.db.jpa.JPAApi;
+import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.chapter;
 
-import javax.persistence.Entity;
+import javax.inject.Inject;
+import java.util.List;
 
-@Entity
 public class ChapterController extends Controller
 {
+    private JPAApi jpaApi;
 
+    @Inject
+    public ChapterController(JPAApi jpaApi)
+    {
+        this.jpaApi = jpaApi;
+    }
+
+    @Transactional(readOnly = true)
     public Result getChapter()
     {
-        return ok(chapter.render());
-    }
+        String sql = "SELECT c FROM Chapter c WHERE chapterid = 3 ORDER BY chapterNumber, chapterName";
+        //Chapter chapter = jpaApi.em().createQuery(sql,Chapter.class).getSingleResult();
+        List<Chapter> chapter = jpaApi.em().createQuery(sql.Chapter.class).getResultList();
+        return ok(views.html.chapter.render(chapter));
 
-    public Result postChapter()
+
+    }
+    public Result getHome()
     {
-        return ok(views.html.chapter.render());
+        return ok();
     }
-
-    public Result postReport()
-    {
-        return ok(views.html.report.render());
-    }
-
-
 }
-
-   /* public Result getOutSelection()                             // This is the method to select and calculate OUTS...
-    {
-    Scanner scanner = new Scanner (System.in)
-        if (choice.equalsIgnoreCase("O"))                          // here or regulation controller???
-        {
-            outSelection=add.totalOutSelection;
-        }
-
-        {
-            System.out.println("SELECTED OUT");
-        }
-        return getOutSelection();
-    }*/
-
-   /* METHODS FOR EACH CHAPTER*/
-
-
 
 
 
