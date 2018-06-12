@@ -13,11 +13,17 @@
 </head>
 <body>
 <h1>FEAST Home Page</h1>
-
+<form method="post">
+    @CSRF.formField
+    Food Service Name: <input type = "text" name = "Enter FS Name">
+</form>
+</br>
 <form action="@routes.ChapterController.postChapter" method="POST">
     @CSRF.formField
     <input type="submit" value="GO TO CHAPTER"/>
 </form>
+</br>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

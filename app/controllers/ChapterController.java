@@ -9,8 +9,6 @@ import javax.persistence.Entity;
 @Entity
 public class ChapterController extends Controller
 {
-    //private Integer outSelection;
-
 
     public Result getChapter()
     {
@@ -26,10 +24,13 @@ public class ChapterController extends Controller
     {
         return ok(views.html.report.render());
     }
+
+
 }
 
    /* public Result getOutSelection()                             // This is the method to select and calculate OUTS...
     {
+    Scanner scanner = new Scanner (System.in)
         if (choice.equalsIgnoreCase("O"))                          // here or regulation controller???
         {
             outSelection=add.totalOutSelection;

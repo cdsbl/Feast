@@ -10,13 +10,9 @@ import javax.persistence.Entity;
 public class RegulationController extends Controller
 
 {
-
-
-
   public Result getReport()
   {
       return ok(report.render());
-
   }
 
 }

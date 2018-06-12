@@ -1,20 +1,26 @@
 package controllers;
 
+import play.data.DynamicForm;
+import play.data.FormFactory;
 import play.mvc.*;
 
 import views.html.*;
 
+import javax.inject.Inject;
 import javax.persistence.Entity;
 
 @Entity
 public class HomeController extends Controller
 {
-    private String name; //FOOD SERVICE NAME
+    private FormFactory formFactory;
 
-    public String getName()
+    public Result getFoodServiceName()                         //FOOD SERVICE NAME
     {
-        System.out.println("RESTAURANT NAME");
-        return name;
+        DynamicForm form = formFactory.form().bindFromRequest();
+        String foodServiceName = form.get("Food Service Name");
+
+        return ok (views.html.home.render());
+
     }
 
     public Result getHome()
