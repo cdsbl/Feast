@@ -1,3 +1,4 @@
+@(chapter:Chapter)
 <!doctype html>
 @import helper._
 <html lang="en">
@@ -13,12 +14,14 @@
 </head>
 <body>
 <h1>FEAST Home Page</h1>
+<p>@chapter.getChapterName</p>
+
 <form method="post">
     @CSRF.formField
     Food Service Name: <input type = "text" name = "Enter FS Name">
 </form>
 </br>
-<form action="@routes.ChapterController.postChapter" method="POST">
+<form action="routes.ChapterController.postChapter" method="POST">
     @CSRF.formField
     <input type="submit" value="GO TO CHAPTER"/>
 </form>

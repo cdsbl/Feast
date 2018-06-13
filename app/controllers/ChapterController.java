@@ -1,6 +1,7 @@
 package controllers;
 
 import models.Chapter;
+import models.Regulation;
 import play.db.jpa.JPAApi;
 import play.db.jpa.Transactional;
 import play.mvc.Controller;
@@ -22,18 +23,16 @@ public class ChapterController extends Controller
     @Transactional(readOnly = true)
     public Result getChapter()
     {
-        String sql = "SELECT c FROM Chapter c WHERE chapterid = 3 ORDER BY chapterNumber, chapterName";
-        //Chapter chapter = jpaApi.em().createQuery(sql,Chapter.class).getSingleResult();
-        List<Chapter> chapter = jpaApi.em().createQuery(sql.Chapter.class).getResultList();
-        return ok(views.html.chapter.render(chapter));
-
+        String sql = "SELECT c FROM Chapter c";
+        List<Chapter> chapters = jpaApi.em().createQuery(sql, Chapter.class).getResultList();
+        return ok(views.html.chapter.render(chapters));
 
     }
-    public Result getHome()
-    {
-        return ok();
-    }
+
 }
 
 
-
+//TO PULL ONE CHAPTER NAME AT A TIME--------------------
+//String sql = "SELECT c FROM Chapter c WHERE chapterid = 8 ORDER BY chapterNumber, chapterName";
+//Chapter chapter = jpaApi.em().createQuery(sql,Chapter.class).getSingleResult();
+//return ok(views.html.chapter.render(chapter));

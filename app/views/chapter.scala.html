@@ -1,3 +1,4 @@
+@(chapters:List [Chapter])
 <!doctype html>
 @import helper._
 <html lang="en">
@@ -5,24 +6,40 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
-
-
 </head>
-<body>
-<h1>CHAPTER Page</h1>
 
-<form action="@routes.ChapterController.postReport" method="POST">
-    @CSRF.formField
-    <input type="submit" value="VIEW REPORT"/>
-</form>
-<br>
-<form action="@routes.HomeController.postHome" method="POST">
-    @CSRF.formField
-    <input type="submit" value="RETURN TO HOME"/>
-</form>
+<body>
+
+<h1>CHAPTER LISTINGS</h1>
+<table class = "table table-hover table-bordered">
+    <th>Number</th>
+    <th>Chapter Name</th>
+@for(chapter <- chapters){
+    <tr>
+        <td>
+            <form method ="GET" action = "regulation">
+                @CSRF.formField
+                <input type ="submit" value=" @chapter.getChapterNumber">
+
+            </form>
+
+        </td>
+        <td>
+            @chapter.getChapterName
+        </td>
+    </tr>
+    }
+</table>
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,47 @@
+@(regulations: List [Regulation])
+<!DOCTYPE html>
+@import helper._
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+
+
+
+
+    <title>Regulation</title>
+</head>
+
+<body>
+
+<h1>REGULATION SPECIFICS</h1>
+<table class = "table table-hover table-bordered">
+<th>Number</th>
+    <th>Code</th>
+@for(regulation <- regulations){
+    <tr>
+        <td>
+            <form method ="GET" action = "regulation">
+                @CSRF.formField
+                <input type ="submit" value="@regulation.getRegulationNumber">
+            </form>
+        </td>
+        <td>
+            @regulation.getRegulationSpecific
+        </td>
+    </tr>
+}
+
+</table>
+</body>
+</html>
+
+
+</body>
+</html>
