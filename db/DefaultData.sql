@@ -560,6 +560,35 @@ VALUES ('C240311HygienicPractices_B',
                 and Subparagraph 2-301.14(C).',
 2, 1, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C310111Characteristics',
+'"FOOD shall be safe, unADULTERATED, and, as specified under Subpart 3-601.12, honestly presented. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_A',
+'"(A) FOOD shall be obtained from sources that comply with LAW. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_B ',
+'"(B) FOOD prepared in a private home may not be used or offered for human consumption in a FOOD ESTABLISHMENT. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_C',
+'"(C) PACKAGED FOOD shall be labeled as specified in LAW, including 21 CFR 101 FOOD Labeling, 9 CFR 317 Labeling, Marking Devices, and Containers, and 9 CFR 381 Subpart N Labeling and Containers, and as specified under Subparts 3-202.17 and 3-202.18. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_D',
+'"(D) FISH, other than those specified in paragraph 3-402.11(B), that are intended for consumption in raw or undercooked form and allowed as specified in Subparagraph 3-401.11(D), may be offered for sale or service if they are obtained from a supplier that freezes the FISH as specified under paragraph 3-402.11; or if they are frozen on the PREMISES as specified under paragraph 3-402.11 and records are retained as specified under paragraph 3-402.12."',
+3, 2, 3);
 
 
 

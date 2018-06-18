@@ -1,4 +1,4 @@
-
+@(regulationoutcount:List[RegulationOutCount])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -7,27 +7,42 @@
     <meta charset="UTF-8">
     <script src="/assets/lib/chart.js/Chart.bundle.min.js"></script>
     <script src="/assets/lib/chart.js/utils.js"></script>
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
 
 </head>
 <body>
-<h1>OUT OF COMPLIANCE REGULATIONS</h1>
+<div class="jumbotron">
+    <h1 class="display-4">F.E.A.S.T.</h1>
+    <p class="lead">Summary report of selected Out of Compliance regulations</p>
+    <hr class="my-4">
+    <p>Clear this report and return to home page.</p>
+    <a class="btn btn-primary btn-lg" href="chapter" role="button">Exit</a>
+</div>
+
+
+
+
+
 <form action="@routes.RegulationController.getRegulationSpecific" method="GET">
     @CSRF.formField
     <input type="submit" value="RETURN TO REGULATION SEARCH"/>
 </form>
+
+<p>regulationoutcount</p>
+<ul>
+    <li>@regulationoutcount</li>
+    <li></li>
+    <li></li>
+</ul>
+<p>@regulationoutcount</p>
 <br>
-<form action="@routes.ChapterController.getChapter" method="GET">
-    @CSRF.formField
-    <input type="submit" value="CLEAR REPORT AND START at CHAPTER LIST"/>
-</form>
 
 
-<canvas id="myChart" width="20" height="20"></canvas>
-<script type = "text/javascript" id="chartData"
-        src = "assets/javascripts/hello.js"
-        data-labels = "People, Place, Process"
-        data-data = "3, 5, 6">
-</script>
+
+
+
+
+
 
 
 

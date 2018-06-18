@@ -10,6 +10,9 @@ public class Regulation
     private int regulationId;
     private String regulationNumber;
     private String regulationSpecific;
+    private int regulationLevelId;
+    private int regulationControlPointId;
+
 
     public int getRegulationId()
     {
@@ -24,6 +27,16 @@ public class Regulation
     public String getRegulationSpecific()
     {
         return regulationSpecific;
+    }
+
+    public int getRegulationLevelId()
+    {
+        return regulationLevelId;
+    }
+
+    public int getRegulationControlPointId()
+    {
+        return regulationControlPointId;
     }
 
     public void setRegulationId(int regulationId)

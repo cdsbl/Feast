@@ -3,51 +3,50 @@
 @import helper._
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
+<div class="jumbotron">
+    <h1 class="display-4">F.E.A.S.T.</h1>
+    <p class="lead">Food Establishments of Arkansas Safety Tool</p>
+    <hr class="my-4">
+    <p>Search within the Rules and Regulations Pertaining to Food Establishments and select out of compliance status</p>
+    <a class="btn btn-primary btn-lg" href="regulation" role="button">Begin</a>
+</div>
 
-<h1>CHAPTER LISTINGS</h1>
-<table class = "table table-hover table-bordered">
+
+<table class="table table-hover table-bordered">
     <th>Number</th>
     <th>Chapter Name</th>
-@for(chapter <- chapters){
+    @for(chapter <- chapters){
     <tr>
         <td>
-            <form method ="GET" action = "regulation">
+            <form method="GET" action="regulation">
                 @CSRF.formField
-                <input type ="submit" value=" @chapter.getChapterNumber">
-
+                <input type="submit" value=" @chapter.getChapterNumber">
             </form>
+            </td>
+    <td>
+        <form method="GET" action="regulation">
+            @CSRF.formField
+                <input type="submit" value="@chapter.getChapterName">
+            </form>
+        </td>
 
-        </td>
-        <td>
-            @chapter.getChapterName
-        </td>
+
     </tr>
     }
 </table>
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/assets/lib/jquery/jquery.min.js" ></script>
+<script src="/assets/lib/jquery/jquery.min.js"></script>
 <script src="/assets/lib/popper.js/umd/popper.min.js"></script>
 <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>

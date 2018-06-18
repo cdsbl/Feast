@@ -3,45 +3,44 @@
 @import helper._
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+    <title>Regulation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
-    <meta charset="UTF-8">
-
-
-
-
-    <title>Regulation</title>
 </head>
 
 <body>
-
 <h1>REGULATION SPECIFICS</h1>
-<table class = "table table-hover table-bordered">
-<th>Number</th>
-    <th>Code</th>
-@for(regulation <- regulations){
-    <tr>
-        <td>
-            <form method ="GET" action = "regulation">
-                @CSRF.formField
-                <input type ="submit" value="@regulation.getRegulationNumber">
-            </form>
-        </td>
-        <td>
-            @regulation.getRegulationSpecific
-        </td>
-    </tr>
+<form action="@routes.RegulationController.postRegulationOutCount" method="POST">
+    @CSRF.formField
+    <input type="submit" class="btn btn-primary btn-lg" value="CREATE">
+<div class="container">
+    <table class="table table-hover table-bordered">
+
+        <th>CODE</th>
+        <th>STATUS</th>
+        @for(regulation <- regulations){
+
+        <tr>
+            <td>
+                <p>@regulation.getRegulationSpecific</p>
+            </td>
+                 <td>
+                    @CSRF.formField
+                    <p><input type ="checkbox" name="reg@regulation.getRegulationId"/>OUT</p>
+                </td>
+        </tr>
 }
 
 </table>
+</div>
+</form>
+<form action="@routes.ChapterController.getChapter" method="GET">
+    @CSRF.formField
+    <a class="btn btn-primary btn-lg" href="chapter" role="button">DELETE ALL</a>
+    </form>
+
 </body>
 </html>
 
-
-</body>
-</html>
