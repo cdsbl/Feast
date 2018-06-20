@@ -590,8 +590,95 @@ VALUES ('C320111SospocRecords_D',
 '"(D) FISH, other than those specified in paragraph 3-402.11(B), that are intended for consumption in raw or undercooked form and allowed as specified in Subparagraph 3-401.11(D), may be offered for sale or service if they are obtained from a supplier that freezes the FISH as specified under paragraph 3-402.11; or if they are frozen on the PREMISES as specified under paragraph 3-402.11 and records are retained as specified under paragraph 3-402.12."',
 3, 2, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_E',
+'(E) WHOLE-MUSCLE, INTACT BEEF steaks that are intended for consumption in an undercooked form without a consumer advisory as specified in 3-401.11(C) shall be: (1) Obtained from a FOOD PROCESSING PLANT that, upon request by the purchaser, packages the steaks and labels them, to indicate that the steaks meet the definition of WHOLE-MUSCLE, INTACT BEEF, Pf or (2) Deemed acceptable by the REGULATORY AUTHORITY based on other evidence, such as written buyer specifications or invoices, that indicates that the steaks meet the definition of WHOLE-MUSCLE, INTACT BEEF, Pf and (3) If individually cut in a RETAIL FOOD ESTABLISHMENT: (a) Cut from WHOLE-MUSCLE INTACT BEEF that is labeled by a FOOD PROCESSING PLANT as specified in Subparagraph (1) or identified as specified in Subparagraph (2) of this section, Pf (b) Prepared so they remain intact, Pf and (c) If PACKAGED for undercooking in a Retail FOOD ESTABLISHMENT, labeled as specified in Subparagraph (1) or identified as specified in (2) of this section"',
+3, 2, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_F',
+'"(F) MEAT and POULTRY that is not a READY-TO-EAT FOOD and is in a PACKAGED form when it is offered for sale or otherwise offered for consumption, shall be labeled to include safe handling instructions as specified in THESE RULES AND REGULATIONS, including 9 CFR 317.2(l) and 9 CFR 381.125(b)."',
+3, 2, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320111SospocRecords_G',
+'"(G) Shell EGGS that have not been specifically treated to destroy all viable Salmonellae spp. shall be labeled to include safe handling instructions as specified in LAW, including 21 CFR 101.17(h)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320112SospocRecords',
+'"FOOD in a HERMETICALLY SEALED CONTAINER shall be obtained from a FOOD PROCESSING PLANT that is regulated by the FOOD regulatory agency that has jurisdiction over the plant. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320113SospocRecords',
+'"Fluid milk and milk products shall be obtained from sources that comply with GRADE A STANDARDS as specified in LAW. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410111MConstrepair_A',
+'"Materials that are used in the construction of UTENSILS and FOOD-CONTACT SURFACES of EQUIPMENT may not allow the migration of deleterious substances or impart colors, odors, or tastes to FOOD and under normal use conditions shall be: (A) Safe; P',
+4, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410111MConstrepair_B',
+'(B) Durable, CORROSION-RESISTANT, and nonabsorbent"',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410111MConstrepair_C',
+'"(C) Sufficient in weight and thickness to withstand repeated WAREWASHING;"',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410111MConstrepair_D',
+'"(D) Finished to have a SMOOTH, EASILY CLEANABLE surface;"',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410111MConstrepair_E',
+'"(E) Resistant to pitting, chipping, crazing, scratching, scoring, distortion, and decomposition."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410112MConstrepair_A',
+'"(A) Except as specified in Paragraphs (B) and (C) of this section, cast iron may not be used for UTENSILS or FOOD-CONTACT SURFACES of EQUIPMENT."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410112MConstrepair_B',
+'"(B) Cast iron may be used as a surface for cooking"',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410112MConstrepair_C',
+'"(C) Cast iron may be used in UTENSILS for serving FOOD if the UTENSILS are used only as part of an uninterrupted process from cooking through service."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410113MConstrepair_A',
+'(A) Ceramic, china, crystal UTENSILS, and decorative UTENSILS such as hand painted ceramic or china that are used in contact with FOOD shall be lead-free or contain levels of lead not exceeding the limits of the following UTENSIL categories:  Utensil Category Description Maximum Lead mg/L Hot Beverage Coffee Mugs 0.5 Large Hollowware Bowls 1.1 L (1.16 QT) 1 Small Hollowware Bowls < 1.1 L (1.16 QT) 2.0 Flat Utensils Plates, Saucers 3.0"',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410113MConstrepair_B',
+'"(B) Pewter alloys containing lead in excess of 0.05% may not be used as a FOOD-CONTACT SURFACE. P"',
+4, 2, 2);
 
 
 

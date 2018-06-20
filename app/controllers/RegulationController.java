@@ -8,6 +8,7 @@ import play.db.jpa.JPAApi;
 import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
+import scala.math.Ordering;
 import views.html.regulation;
 
 import javax.inject.Inject;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import static javafx.scene.input.KeyCode.R;
 import static org.h2.expression.Aggregate.COUNT;
 import static org.hibernate.loader.Loader.SELECT;
 
@@ -53,9 +55,6 @@ public class RegulationController extends Controller
         DynamicForm form = formFactory.form().bindFromRequest();
         Set<String> formNames = form.rawData().keySet();
 
-        //int regulationOutCountsId = Integer.parseInt();
-        //int regulationsOutCountsId = Integer.parseInt(form.get("regulationOutCountsId"));
-
 
         for (String formName : formNames)
         {
@@ -69,7 +68,12 @@ public class RegulationController extends Controller
         List<RegulationOutCount> regulationOutCounts = new ArrayList<>();
 
         return ok(views.html.regulationoutcount.render(regulationOutCounts));
+
     }
 
 }
 
+//int regulationOutCountSize = Integer.parseInt(form.get("reg"));
+
+
+//return ok("reg :" + regulationOutCountS

@@ -13,6 +13,7 @@ public class RegulationOutCount
     private int regulationId;
     private String regulationNumber;
     private String regulationSpecific;
+    private int regulationOutCountSize;
     private long count;
 
     public int getRegulationId()
@@ -41,6 +42,11 @@ public class RegulationOutCount
         this.regulationNumber = regulationNumber;
         this.regulationSpecific = regulationSpecific;
         this.count = count;
+    }
+
+    public int getRegulationOutCountSize()
+    {
+        return regulationOutCountSize;
     }
 
     /*public Result getRegulationOutCount()
