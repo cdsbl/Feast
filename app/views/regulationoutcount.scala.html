@@ -15,27 +15,20 @@
     <h1 class="display-4">F.E.A.S.T.</h1>
     <p class="lead">Summary report of selected Out of Compliance regulations</p>
     <hr class="my-4">
-    <p>Clear this report and return to home page.</p>
-    <a class="btn btn-primary btn-lg" href="chapter" role="button">Exit</a>
+    <p>Clear this report and return to regulation list.</p>
+    <a class="btn btn-primary btn-lg" href="regulation" role="button">CLEAR</a>
 </div>
 
+<p>regulation@RegulationOutCount</p>
 
-
-
-
-<form action="@routes.RegulationController.getRegulationSpecific" method="GET">
-    @CSRF.formField
-    <input type="submit" value="RETURN TO REGULATION SEARCH"/>
-</form>
-
-<p>regulationoutcount</p>
-<ul>
-    <li>@regulationoutcount</li>
-    <li></li>
-    <li></li>
-</ul>
-<p>@regulationoutcount</p>
+<p>@regulation.getRegulationId</p>
 <br>
 
+
+
+
+<div>
+<a class="btn btn-primary btn-block" href="chapter" role="button">EXIT ALL</a>
+</div>
 </body>
 </html>

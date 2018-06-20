@@ -41,39 +41,65 @@ public class RegulationController extends Controller
         return ok(views.html.regulation.render(regulations));
     }
 
-    @Transactional(readOnly = true)
+   /* @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
         String sql = "SELECT r FROM Regulation r";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
-    }
+    }*/
 
-    @Transactional
+    @Transactional(readOnly = true)
     public Result postRegulationOutCount()
     {
         DynamicForm form = formFactory.form().bindFromRequest();
+
         Set<String> formNames = form.rawData().keySet();
 
+        List<Integer> regulationOutCounts = new ArrayList<>();
 
         for (String formName : formNames)
         {
-            if (formName.startsWith("reg"))
+            if (formName.startsWith("reg-"))
             {
-                String typeOptionValue = form.get(formName);
-                System.out.println(formName + " " + typeOptionValue);
+                int regulationOutCount = Integer.parseInt(formName.replace("reg-", ""));
+                regulationOutCounts.add(regulationOutCount);
             }
         }
+        String sql = "SELECT r FROM Regulation r WHERE regulationOutCount IN (:regulationOutCounts) ORDER BY regulationNumber";
+        List<Regulation> regulationOutCount = jpaApi.em().createQuery(sql, Regulation.class).
+                setParameter("regulationOutCounts", regulationOutCounts).getResultList();
 
-        List<RegulationOutCount> regulationOutCounts = new ArrayList<>();
-
-        return ok(views.html.regulationoutcount.render(regulationOutCounts));
+        return ok(views.html.regulationoutcount.render(regulationOutCount));
 
     }
-
 }
 
-//int regulationOutCountSize = Integer.parseInt(form.get("reg"));
+           /* for (String formName : formNames)
+            {
+                if (formName.startsWith("cat-"))
+                {
+                    int categoryId = Integer.parseInt(formName.replace("cat-", ""));
+                    categoryIds.add(categoryId);
+                }
+            }
+
+            String sql = "SELECT c FROM Category c WHERE categoryId IN (:categoryIds) ORDER BY name";
+            List<Category> categories = jpaApi.em().createQuery(sql, Category.class).
+                    setParameter("categoryIds", categoryIds).getResultList();
+
+            return ok(views.html.CategoriesSelected.render(categories));
+        }
 
 
-//return ok("reg :" + regulationOutCountS
+
+
+
+
+
+//int regulationOutCountSize = Integer.parseInt(form.get(regulationOutCountSize));
+//jpaApi.em().persist(regulationOutCountSize);
+// return ok("reg: " + regulationOutCounts.getClass());
+
+//String typeOptionValue = form.get(formName);
+//System.out.println(formName + " " + typeOptionValue);*/

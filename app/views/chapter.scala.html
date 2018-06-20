@@ -19,27 +19,20 @@
 </div>
 
 
-<table class="table table-hover table-bordered">
+<table class="table bordered">
     <th>Number</th>
     <th>Chapter Name</th>
     @for(chapter <- chapters){
     <tr>
         <td>
-            <form method="GET" action="regulation">
-                @CSRF.formField
-                <input type="submit" value=" @chapter.getChapterNumber">
-            </form>
-            </td>
-    <td>
-        <form method="GET" action="regulation">
-            @CSRF.formField
-                <input type="submit" value="@chapter.getChapterName">
-            </form>
+            @chapter.getChapterNumber
         </td>
-
+        <td>
+            @chapter.getChapterName
+       </td>
 
     </tr>
-    }
+}
 </table>
 
 

@@ -13,8 +13,15 @@ public class RegulationOutCount
     private int regulationId;
     private String regulationNumber;
     private String regulationSpecific;
-    private int regulationOutCountSize;
-    private long count;
+    private int regulationOutCount;
+
+    public RegulationOutCount(int regulationId, String regulationNumber, String regulationSpecific, int regulationOutCount)
+    {
+        this.regulationId = regulationId;
+        this.regulationNumber = regulationNumber;
+        this.regulationSpecific = regulationSpecific;
+        this.regulationOutCount = regulationOutCount;
+    }
 
     public int getRegulationId()
     {
@@ -26,31 +33,15 @@ public class RegulationOutCount
         return regulationNumber;
     }
 
-    public long getCount()
-    {
-        return count;
-    }
-
     public String getRegulationSpecific()
     {
         return regulationSpecific;
     }
 
-    public RegulationOutCount(int regulationId, String regulationNumber, String regulationSpecific, long count)
+    public int getRegulationOutCount()
     {
-        this.regulationId = regulationId;
-        this.regulationNumber = regulationNumber;
-        this.regulationSpecific = regulationSpecific;
-        this.count = count;
+        return regulationOutCount;
     }
 
-    public int getRegulationOutCountSize()
-    {
-        return regulationOutCountSize;
-    }
 
-    /*public Result getRegulationOutCount()
-    {
-        return ok(views.html.regulationoutcount.render());
-    }*/
 }
