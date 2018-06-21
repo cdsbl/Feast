@@ -13,6 +13,7 @@ GET     /regulation                     controllers.RegulationController.getRegu
 
 #GET    /regulationoutcount             controllers.RegulationController.getRegulationOutCount
 POST    /regulationoutcount             controllers.RegulationController.postRegulationOutCount
+#POST    /regulationId                    controllers.RegulationController.postRegulationId
 
 
 # Map static resources from the /public folder to the /assets URL path

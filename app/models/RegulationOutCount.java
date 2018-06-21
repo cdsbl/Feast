@@ -15,13 +15,6 @@ public class RegulationOutCount
     private String regulationSpecific;
     private int regulationOutCount;
 
-    public RegulationOutCount(int regulationId, String regulationNumber, String regulationSpecific, int regulationOutCount)
-    {
-        this.regulationId = regulationId;
-        this.regulationNumber = regulationNumber;
-        this.regulationSpecific = regulationSpecific;
-        this.regulationOutCount = regulationOutCount;
-    }
 
     public int getRegulationId()
     {
@@ -43,5 +36,23 @@ public class RegulationOutCount
         return regulationOutCount;
     }
 
+    public void setRegulationId(int regulationId)
+    {
+        this.regulationId = regulationId;
+    }
 
+    public void setRegulationNumber(String regulationNumber)
+    {
+        this.regulationNumber = regulationNumber;
+    }
+
+    public void setRegulationSpecific(String regulationSpecific)
+    {
+        this.regulationSpecific = regulationSpecific;
+    }
+
+    public void setRegulationOutCount(int regulationOutCount)
+    {
+        this.regulationOutCount = regulationOutCount;
+    }
 }

@@ -1,4 +1,4 @@
-@(regulationoutcount:List[RegulationOutCount])
+@(regulations: List [Regulation])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -19,9 +19,11 @@
     <a class="btn btn-primary btn-lg" href="regulation" role="button">CLEAR</a>
 </div>
 
-<p>regulation@RegulationOutCount</p>
+<p></p>
+@for(regulation <- regulations){
+<td><a href="regulation/@regulation.getRegulationId"></a></td>
 
-<p>@regulation.getRegulationId</p>
+}
 <br>
 
 

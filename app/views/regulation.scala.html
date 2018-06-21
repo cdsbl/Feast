@@ -12,12 +12,12 @@
 
 <body>
 <h1>REGULATION SPECIFICS</h1>
-<form action="@routes.RegulationController.postRegulationOutCount" method="POST">
-    @CSRF.formField
-    <input type="submit" class="btn btn-primary btn-block" value="CREATE">
+
+<a class="btn btn-primary btn-block" href="regulationoutcount" role="button">CREATE</a>
+    <form method="POST">
+        @CSRF.formField
 <div class="container">
     <table class="table table-hover table-bordered">
-
         <th>CODE</th>
         <th>STATUS</th>
         @for(regulation <- regulations){
@@ -36,10 +36,9 @@
 </table>
 </div>
 </form>
-<form action="@routes.ChapterController.getChapter" method="GET">
-    @CSRF.formField
+
     <a class="btn btn-primary btn-block" href="chapter" role="button">DELETE ALL</a>
-    </form>
+
 
 </body>
 </html>

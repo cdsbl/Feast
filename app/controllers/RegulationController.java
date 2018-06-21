@@ -1,30 +1,24 @@
 package controllers;
 
 import models.Regulation;
-import models.RegulationOutCount;
 import play.data.FormFactory;
 import play.data.DynamicForm;
 import play.db.jpa.JPAApi;
 import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
-import scala.math.Ordering;
-import views.html.regulation;
+import scala.Dynamic;
 
 import javax.inject.Inject;
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static javafx.scene.input.KeyCode.R;
-import static org.h2.expression.Aggregate.COUNT;
-import static org.hibernate.loader.Loader.SELECT;
-
-
 public class RegulationController extends Controller
 {
-    private JPAApi jpaApi;
-    private FormFactory formFactory;
+    JPAApi jpaApi;
+    FormFactory formFactory;
 
     @Inject
     public RegulationController(FormFactory formFactory, JPAApi jpaApi)
@@ -40,14 +34,13 @@ public class RegulationController extends Controller
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
     }
-
-   /* @Transactional(readOnly = true)
+     @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
         String sql = "SELECT r FROM Regulation r";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
-    }*/
+    }
 
     @Transactional(readOnly = true)
     public Result postRegulationOutCount()
@@ -56,26 +49,29 @@ public class RegulationController extends Controller
 
         Set<String> formNames = form.rawData().keySet();
 
-        List<Integer> regulationOutCounts = new ArrayList<>();
+        List<Integer> regulationIds = new ArrayList<>();
 
         for (String formName : formNames)
         {
             if (formName.startsWith("reg-"))
             {
-                int regulationOutCount = Integer.parseInt(formName.replace("reg-", ""));
-                regulationOutCounts.add(regulationOutCount);
+                int regulationId = Integer.parseInt(formName.replace("reg-", ""));
+                regulationIds.add(regulationId);
             }
         }
-        String sql = "SELECT r FROM Regulation r WHERE regulationOutCount IN (:regulationOutCounts) ORDER BY regulationNumber";
-        List<Regulation> regulationOutCount = jpaApi.em().createQuery(sql, Regulation.class).
-                setParameter("regulationOutCounts", regulationOutCounts).getResultList();
+        String sql = "SELECT r FROM Regulation r WHERE RegulationId IN (:regulationIds) ORDER BY RegulationSpecific";
+        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
+                setParameter("regulationIds", regulationIds).getResultList();
 
-        return ok(views.html.regulationoutcount.render(regulationOutCount));
+        return ok(views.html.regulationoutcount.render(regulations));
 
     }
+
 }
 
-           /* for (String formName : formNames)
+
+           /*
+           for (String formName : formNames)
             {
                 if (formName.startsWith("cat-"))
                 {
@@ -96,10 +92,11 @@ public class RegulationController extends Controller
 
 
 
+ /* @Transactional(readOnly = true)
+    public Result getRegulationNumber()
+    {
+        String sql = "SELECT r FROM Regulation r";
+        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        return ok(views.html.regulation.render(regulations));
+    }*/
 
-//int regulationOutCountSize = Integer.parseInt(form.get(regulationOutCountSize));
-//jpaApi.em().persist(regulationOutCountSize);
-// return ok("reg: " + regulationOutCounts.getClass());
-
-//String typeOptionValue = form.get(formName);
-//System.out.println(formName + " " + typeOptionValue);*/
