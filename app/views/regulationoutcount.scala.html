@@ -11,24 +11,43 @@
 
 </head>
 <body>
-<div class="jumbotron">
-    <h1 class="display-4">F.E.A.S.T.</h1>
-    <p class="lead">Summary report of selected Out of Compliance regulations</p>
-    <hr class="my-4">
-    <p>Clear this report and return to regulation list.</p>
-    <a class="btn btn-primary btn-lg" href="regulation" role="button">CLEAR</a>
+<div class="container">
+<h1 class="display-4">F.E.A.S.T. SUMMARY</h1>
 </div>
+
+<div class="container">
+    <table class="table table-bordered">
+        <th># Office Use Only</th>
+        <th>CCP    1:People 2:Process 3:Place</th>
+        <th>LEVEL  1:Pf     2:P       3:Core</th>
+    </table>
+</div>
+
+<div class="container">
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <th>#</th>
+        <th>CCP</th>
+        <th>LEVEL</th>
+        <th>SPECIFIC</th>
+
 @for(regulation <- regulations){
-
-<i>@regulation.getRegulationId()</i>
-<strong>@regulation.getRegulationControlPointId</strong>
-<strong>@regulation.getRegulationLevelId</strong>
-<blockquote>@regulation.getRegulationSpecific</blockquote>
-
+        <tr>
+            <td>
+            <i>@regulation.getRegulationId()</i>
+            </td>
+            <td>
+                <strong>@regulation.getRegulationControlPointId</strong>
+            </td>
+            <td><strong>@regulation.getRegulationLevelId</strong></td>
+            <td><blockquote>@regulation.getRegulationSpecific</blockquote></td>
+        </tr>
 }
+    </table>
+</div>
+<div class="container">
+<a class="btn btn-primary btn-lg" href="regulation" role="button">UNDO</a>
 
-
-<a class="btn btn-primary btn-block" href="chapter" role="button">EXIT ALL</a>
-
+<a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
+</div>
 </body>
 </html>

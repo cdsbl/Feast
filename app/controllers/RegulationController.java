@@ -68,7 +68,7 @@ public class RegulationController extends Controller
                 regulationIds.add(regulationId);
             }
         }
-        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
+        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific ";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
@@ -77,9 +77,25 @@ public class RegulationController extends Controller
 
 }
 
+//<table class="table table-hover table-bordered">
+//<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
+
+/*<tr>
+<td>
+
+<p>@regulation.getRegulationSpecific</p>
+
+</td>
+<td>
+<div class="checkbox">
+<label><input type="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId">OUT</label>
+</div>
 
 
+</td>
+</tr>*/
 
+//<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
 
 
 
