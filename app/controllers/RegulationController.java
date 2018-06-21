@@ -34,12 +34,21 @@ public class RegulationController extends Controller
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
     }
-     @Transactional(readOnly = true)
+
+    @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
         String sql = "SELECT r FROM Regulation r";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
+    }
+
+   @Transactional(readOnly = true)
+    public Result getRegulationOutCount()
+    {
+        String sql = "SELECT r FROM Regulation r";
+        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        return ok(views.html.regulationoutcount.render(regulations));
     }
 
     @Transactional(readOnly = true)
@@ -59,16 +68,26 @@ public class RegulationController extends Controller
                 regulationIds.add(regulationId);
             }
         }
-        String sql = "SELECT r FROM Regulation r WHERE RegulationId IN (:regulationIds) ORDER BY RegulationSpecific";
+        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
         return ok(views.html.regulationoutcount.render(regulations));
-
     }
 
 }
 
+
+
+
+
+
+
+
+
+
+/*<a href="regulation.getRegulationId">*/
+/* @for(regulation <- regulations){*/
 
            /*
            for (String formName : formNames)

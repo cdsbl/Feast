@@ -13,7 +13,7 @@ public class Regulation
     private String regulationSpecific;
     private int regulationLevelId;
     private int regulationControlPointId;
-    private int regulationOutCount;
+
 
     public int getRegulationId()
     {
@@ -66,8 +66,5 @@ public class Regulation
         this.regulationControlPointId = regulationControlPointId;
     }
 
-    public void setRegulationOutCount(int regulationOutCount)
-    {
-        this.regulationOutCount = regulationOutCount;
-    }
+
 }

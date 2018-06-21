@@ -11,7 +11,7 @@ GET     /chapter                        controllers.ChapterController.getChapter
 GET     /regulation                     controllers.RegulationController.getRegulationSpecific
 #POST    /regulation                     controllers.RegulationController.postRegulationSpecific
 
-#GET    /regulationoutcount             controllers.RegulationController.getRegulationOutCount
+GET    /regulationoutcount              controllers.RegulationController.getRegulationOutCount
 POST    /regulationoutcount             controllers.RegulationController.postRegulationOutCount
 #POST    /regulationId                    controllers.RegulationController.postRegulationId
 

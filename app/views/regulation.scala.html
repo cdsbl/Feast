@@ -1,4 +1,4 @@
-@(regulations: List [Regulation])
+@(regulations: List[Regulation])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -11,12 +11,11 @@
 </head>
 
 <body>
+<form method="POST" action="/regulationoutcount">
+    @CSRF.formField
 <h1>REGULATION SPECIFICS</h1>
 
-<a class="btn btn-primary btn-block" href="regulationoutcount" role="button">CREATE</a>
-    <form method="POST">
-        @CSRF.formField
-<div class="container">
+    <div class="container">
     <table class="table table-hover table-bordered">
         <th>CODE</th>
         <th>STATUS</th>
@@ -27,11 +26,12 @@
                 <p>@regulation.getRegulationSpecific</p>
             </td>
                  <td>
-                    @CSRF.formField
-                    <p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
+                     <p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
+
                 </td>
         </tr>
 }
+        <input type = "submit" value="CREATE" class="btn btn-primary btn-block">
 
 </table>
 </div>

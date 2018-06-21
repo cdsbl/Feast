@@ -1,4 +1,4 @@
-package models;
+/*package models;
 import play.db.jpa.Transactional;
 import play.mvc.Result;
 import javax.persistence.Entity;
@@ -13,7 +13,7 @@ public class RegulationOutCount
     private int regulationId;
     private String regulationNumber;
     private String regulationSpecific;
-    private int regulationOutCount;
+
 
 
     public int getRegulationId()
@@ -31,10 +31,7 @@ public class RegulationOutCount
         return regulationSpecific;
     }
 
-    public int getRegulationOutCount()
-    {
-        return regulationOutCount;
-    }
+
 
     public void setRegulationId(int regulationId)
     {
@@ -51,8 +48,6 @@ public class RegulationOutCount
         this.regulationSpecific = regulationSpecific;
     }
 
-    public void setRegulationOutCount(int regulationOutCount)
-    {
-        this.regulationOutCount = regulationOutCount;
-    }
+
 }
+*/

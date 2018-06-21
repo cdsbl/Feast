@@ -1,4 +1,4 @@
-@(regulations: List [Regulation])
+@(regulations: List[Regulation])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -18,19 +18,17 @@
     <p>Clear this report and return to regulation list.</p>
     <a class="btn btn-primary btn-lg" href="regulation" role="button">CLEAR</a>
 </div>
-
-<p></p>
 @for(regulation <- regulations){
-<td><a href="regulation/@regulation.getRegulationId"></a></td>
+
+<i>@regulation.getRegulationId()</i>
+<strong>@regulation.getRegulationControlPointId</strong>
+<strong>@regulation.getRegulationLevelId</strong>
+<blockquote>@regulation.getRegulationSpecific</blockquote>
 
 }
-<br>
 
 
-
-
-<div>
 <a class="btn btn-primary btn-block" href="chapter" role="button">EXIT ALL</a>
-</div>
+
 </body>
 </html>
