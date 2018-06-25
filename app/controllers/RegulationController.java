@@ -1,6 +1,7 @@
 package controllers;
 
 import models.Regulation;
+import models.RegulationControlPoint;
 import play.data.FormFactory;
 import play.data.DynamicForm;
 import play.db.jpa.JPAApi;
@@ -36,14 +37,6 @@ public class RegulationController extends Controller
     }
 
     @Transactional(readOnly = true)
-    public Result getRegulationNumber()
-    {
-        String sql = "SELECT r FROM Regulation r";
-        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
-        return ok(views.html.regulation.render(regulations));
-    }
-
-   @Transactional(readOnly = true)
     public Result getRegulationOutCount()
     {
         String sql = "SELECT r FROM Regulation r";
@@ -68,14 +61,63 @@ public class RegulationController extends Controller
                 regulationIds.add(regulationId);
             }
         }
-        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific ";
+        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
         return ok(views.html.regulationoutcount.render(regulations));
     }
 
+    @Transactional(readOnly = true)
+    public Result getRegulationControlPointCount()
+    {
+        String sql = "SELECT NEW RegulationControlPoint(r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) "+
+                "FROM regulation rt "+
+                "JOIN regulationcontrolpoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
+                "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
+                "ORDER BY r.regulationControlPoints ";
+
+        List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql,RegulationControlPoint.class).getResultList();
+        return ok(views.html.regulationouttotal.render(regulationControlPoints));
+    }
+
+    @Transactional(readOnly = true)
+    public Result getRegulationNumber()
+    {
+        String sql = "SELECT r FROM Regulation r";
+        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        return ok(views.html.regulation.render(regulations));
+    }
 }
+
+
+
+
+
+// DO NOT DELETE THIS!!
+    /*String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
+    List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
+            setParameter("regulationIds", regulationIds).getResultList();*/
+
+
+
+
+/*<div class="container">
+<div class="panel-heading"><strong>CONTENTS</strong></div>
+<div class="panel-body">
+<ul class="list-group">
+<li class="list-group-item">1.  Purpose and Definitions</li>
+<li class="list-group-item">2.  Management and Personnel</li>
+<li class="list-group-item">3.  Food</li>
+<li class="list-group-item">4.  Equipment, Utensils, and Linens</li>
+<li class="list-group-item">5.  Water, Plumbing, and Waste</li>
+<li class="list-group-item">6.  Physical Facilities</li>
+<li class="list-group-item">7.  Poisonous or Toxic Materials</li>
+<li class="list-group-item">8.  Compliance and Enforcement</li>
+</ul>
+</div>
+</div>*/
+
 
 //<table class="table table-hover table-bordered">
 //<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>

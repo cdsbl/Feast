@@ -17,6 +17,8 @@ libraryDependencies += "org.mariadb.jdbc" % "mariadb-java-client" % "2.2.5"
 libraryDependencies += "org.webjars" % "bootstrap" % "4.1.0"
 libraryDependencies += "org.webjars.bowergithub.chartjs" % "chart.js" % "2.7.2"
 
+
+
 // Test Database
 libraryDependencies += "com.h2database" % "h2" % "1.4.196"
 
@@ -26,3 +28,5 @@ libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
 
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
+
+

@@ -1,0 +1,50 @@
+@(regulationcontrolpoints:List[RegulationControlPoint])
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTROL POINT AREAS</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="display-4">F.E.A.S.T. REGULATION OUT TOTALS</h1>
+</div>
+
+<div class="container">
+    <table class="table table-bordered">
+        <th>#</th>
+        <th>Control Points</th>
+        <th>Totals</th>
+    </table>
+</div>
+
+<div class="container">
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <th>#ID</th>
+        <th>Control Point Area</th>
+        <th>Total</th>
+
+        @for(regulationcontrolpoint<-regulationcontrolpoints){
+
+        <tr>
+            <td>
+                @regulationcontrolpoint.getRegulationControlPointId
+            </td>
+            <td>@regulationcontrolpoint.getRegulationControlPoints</td>
+            <td>@@regulationcontrolpoint.getCount</td>
+        </tr>
+        }
+    </table>
+</div>
+<div class="container">
+
+      <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

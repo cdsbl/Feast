@@ -7,40 +7,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+
+
 </head>
 
 <body>
-<div class="jumbotron">
-    <h1 class="display-4">F.E.A.S.T.</h1>
-    <p class="lead">Food Establishments of Arkansas Safety Tool</p>
-    <hr class="my-4">
-    <p>Search within the Rules and Regulations Pertaining to Food Establishments and select out of compliance status</p>
-    <a class="btn btn-primary btn-lg" href="regulation" role="button">Begin</a>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+                <img src=assets/images/ArkansasPlain.png" alt="Arkansas" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+                <img src=assets/images/ArkansasPlain.png" alt="Arkansas" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+        </div>
+    </div>
 </div>
 
-<div class="container">
-    <table class="table table-bordered table-condensed">
-    <th>Number</th>
-    <th>Chapter Name</th>
-    @for(chapter <- chapters){
-    <tr>
-        <td>
-            @chapter.getChapterNumber
-        </td>
-        <td>
-            @chapter.getChapterName
-       </td>
-
-    </tr>
-}
-</table>
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+                <img src=assets/images/ArkansasPlain.png" alt="Arkansas" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+        </div>
+    </div>
 </div>
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<a class="btn btn-primary btn-lg" href="regulation" role="button">Begin</a>
 <script src="/assets/lib/jquery/jquery.min.js"></script>
 <script src="/assets/lib/popper.js/umd/popper.min.js"></script>
 <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

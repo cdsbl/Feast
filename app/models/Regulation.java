@@ -15,14 +15,10 @@ public class Regulation
     private int regulationControlPointId;
 
 
+
     public int getRegulationId()
     {
         return regulationId;
-    }
-
-    public String getRegulationNumber()
-    {
-        return regulationNumber;
     }
 
     public String getRegulationSpecific()
@@ -39,6 +35,16 @@ public class Regulation
 
     {
         return regulationControlPointId;
+    }
+
+
+
+
+
+
+    public String getRegulationNumber()
+    {
+        return regulationNumber;
     }
 
     public void setRegulationId(int regulationId)

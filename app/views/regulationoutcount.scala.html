@@ -31,6 +31,7 @@
         <th>SPECIFIC</th>
 
 @for(regulation <- regulations){
+
         <tr>
             <td>
             <i>@regulation.getRegulationId()</i>
@@ -45,9 +46,13 @@
     </table>
 </div>
 <div class="container">
+<a class="btn btn-primary btn-lg" href="regulationouttotal" role="button">CHART</a>
+
 <a class="btn btn-primary btn-lg" href="regulation" role="button">UNDO</a>
 
 <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
+
+</div>
 </div>
 </body>
 </html>
