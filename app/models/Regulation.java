@@ -9,7 +9,6 @@ public class Regulation
 {
     @Id
     private int regulationId;
-    private String regulationNumber;
     private String regulationSpecific;
     private int regulationLevelId;
     private int regulationControlPointId;
@@ -36,41 +35,5 @@ public class Regulation
     {
         return regulationControlPointId;
     }
-
-
-
-
-
-
-    public String getRegulationNumber()
-    {
-        return regulationNumber;
-    }
-
-    public void setRegulationId(int regulationId)
-    {
-        this.regulationId = regulationId;
-    }
-
-    public void setRegulationNumber(String regulationNumber)
-    {
-        this.regulationNumber = regulationNumber;
-    }
-
-    public void setRegulationSpecific(String regulationSpecific)
-    {
-        this.regulationSpecific = regulationSpecific;
-    }
-
-    public void setRegulationLevelId(int regulationLevelId)
-    {
-        this.regulationLevelId = regulationLevelId;
-    }
-
-    public void setRegulationControlPointId(int regulationControlPointId)
-    {
-        this.regulationControlPointId = regulationControlPointId;
-    }
-
 
 }

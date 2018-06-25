@@ -680,7 +680,143 @@ VALUES ('C410113MConstrepair_B',
 '"(B) Pewter alloys containing lead in excess of 0.05% may not be used as a FOOD-CONTACT SURFACE. P"',
 4, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510111Water_A',
+'"DRINKING WATER shall be obtained from an APPROVED source that is: (A) A PUBLIC WATER SYSTEM; P"',
+5, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510111Water_B',
+'"(B) A SEMI-PUBLIC WATER SYSTEM that is constructed, maintained, and operated according to LAW. P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510112Water',
+'"A DRINKING WATER system shall be flushed and disinfected before being placed in service after construction, repair, or modification and after an emergency situation, such as a flood, that may introduce contaminants to the system. P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510113Water',
+'"BOTTLED DRINKING WATER used or sold in a RETAIL FOOD ESTABLISHMENT shall be obtained from APPROVED sources in accordance with 21 CFR 129 - Processing and Bottling of Bottled DRINKING WATER. P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510211Water_A',
+'"Except as specified under Subpart 5-102.12: (A) Water from a PUBLIC WATER SYSTEM shall meet 40 CFR 141 - National Primary Drinking Water Regulations and state DRINKING WATER quality standards; P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510211Water_B',
+'"(B) Water from a SEMI-PUBLIC WATER SYSTEM shall meet state DRINKING WATER quality standards."',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510212Water_A',
+'"(A) A non-DRINKING WATER supply shall be used only if its use is APPROVED BY ARKANSAS PLUMBING CODE. P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510212Water_B',
+'"(B) Non-DRINKING WATER shall be used only for non-culinary purposes such as air conditioning, non-FOOD EQUIPMENT cooling, and fire protection. P"',
+5, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510213Water',
+'"Except when used as specified under Subpart 5-102.12, water from a SEMI-PUBLIC WATER SYSTEM shall be sampled and tested at least annually and as required by state water quality regulations. Pf"',
+5, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510214Water',
+'"The most recent sample report for the SEMI-PUBLIC WATER SYSTEM shall be retained on file in the RETAIL FOOD ESTABLISHMENT or the report shall be maintained as specified by state water quality regulations."',
+5, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510311Water_A',
+'"(A) The water source and system shall be of sufficient capacity to meet the peak water demands of the RETAIL FOOD ESTABLISHMENT. Pf"',
+5, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510311Water_B',
+'"(B) Hot water generation and distribution systems shall be sufficient to meet the peak hot water demands throughout the RETAIL FOOD ESTABLISHMENT. Pf"',
+5, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510312Water',
+'"Water under pressure shall be provided to all fixtures, EQUIPMENT, and nonFOOD EQUIPMENT that are required to use water except that water supplied as specified under Subparagraphs 5-104.12(A) and (B) to a TEMPORARY FOOD ESTABLISHMENT or in response to a temporary interruption of a water supply need not be under pressure. Pf"',
+5, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C510411Water_A',
+'"Water shall be received from the source through the use of: (A) An APPROVED public water main; Pf"',
+5, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C610111MConstRepair_A',
+'"(A) Except as specified in Paragraph (B) of this section, materials for indoor floor, wall, and ceiling surfaces under conditions of normal use shall be:(1) SMOOTH,durable, and EASILY CLEANABLE for areas where RETAIL FOOD ESTABLISHMENT operations are conducted; (2) Closely woven and EASILY CLEANABLE carpet for carpeted areas; and (3) Nonabsorbent for areas subject to moisture such as FOOD preparation areas, walk-in refrigerators, WAREWASHING areas, toilet rooms, MOBILE FOOD ESTABLISHMENT SERVICING AREAS, and areas subject to flushing or spray cleaning methods."',
+6, 3, 3);
+
+VALUES ('C610111MConstRepair_B',
+'"(B) In a TEMPORARY FOOD ESTABLISHMENT:\n" +
+            "(1) If graded to drain, a floor may be concrete, machine-laid asphalt, or dirt or gravel if it is covered with mats, removable platforms, duckboards, or other suitable APPROVED materials that are effectively treated to control dust and mud; and\n" +
+            "(2) Walls and ceilings may be constructed of a material that protects the interior from the weather and windblown dust and debris.";',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C610211MConstRepair_A',
+'"(A) The outdoor walking and driving areas shall be surfaced with concrete, asphalt, or gravel or other materials that have been effectively treated to minimize dust, facilitate maintenance, and prevent muddy conditions.";',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C610211MConstRepair_B',
+'"(B) Exterior surfaces of buildings and MOBILE FOOD ESTABLISHMENTS shall be of weather-resistant materials and shall comply with LAW."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C610211MConstRepair_C',
+'"(C) Outdoor storage areas for REFUSE, recyclables, or returnables shall be of materials specified under Subpart 5-501.11 and 5-501.12."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620111DesignConstIn',
+'"Except as specified under Subpart 6-201.14, and except for anti-slip floor coverings or applications that may be used for safety reasons, floors, floor coverings, walls, wall coverings, and ceilings shall be designed, constructed, and installed so they are SMOOTH and EASILY CLEANABLE."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620112DesignConstIn_A',
+'"(A) Utility service lines and pipes may not be unnecessarily exposed."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620112DesignConstIn_B',
+'"(B) Exposed utility service lines and pipes shall be installed so they do not obstruct or prevent cleaning of the floors, walls, or ceilings."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620112DesignConstIn_C',
+'"(C) Exposed horizontal utility service lines and pipes may not be installed on the floor."',
+6, 3, 3);
 
 
 

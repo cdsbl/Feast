@@ -1,5 +1,6 @@
 package controllers;
 
+import models.Chapter;
 import models.Regulation;
 import models.RegulationControlPoint;
 import play.data.FormFactory;
@@ -51,16 +52,19 @@ public class RegulationController extends Controller
 
         Set<String> formNames = form.rawData().keySet();
 
+
         List<Integer> regulationIds = new ArrayList<>();
 
         for (String formName : formNames)
         {
-            if (formName.startsWith("reg-"))
+           if (formName.startsWith("reg-"))
             {
                 int regulationId = Integer.parseInt(formName.replace("reg-", ""));
                 regulationIds.add(regulationId);
             }
+
         }
+
         String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
                 setParameter("regulationIds", regulationIds).getResultList();
@@ -71,13 +75,13 @@ public class RegulationController extends Controller
     @Transactional(readOnly = true)
     public Result getRegulationControlPointCount()
     {
-        String sql = "SELECT NEW RegulationControlPoint(r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) "+
-                "FROM regulation rt "+
-                "JOIN regulationcontrolpoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
+        String sql = "SELECT NEW RegulationControlPoint (r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) " +
+                "FROM Regulation rt " +
+                "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
                 "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
-                "ORDER BY r.regulationControlPoints ";
+                "ORDER BY r.regulationControlPoints";
 
-        List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql,RegulationControlPoint.class).getResultList();
+        List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql, RegulationControlPoint.class).getResultList();
         return ok(views.html.regulationouttotal.render(regulationControlPoints));
     }
 
@@ -92,13 +96,25 @@ public class RegulationController extends Controller
 
 
 
-
-
 // DO NOT DELETE THIS!!
     /*String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
     List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
             setParameter("regulationIds", regulationIds).getResultList();*/
 
+
+// DO NOT DELETE THIS EITHER!
+
+   /* public Result getRegulationControlPointCount()
+    {
+        String sql = "SELECT NEW RegulationControlPoint(r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) "+
+                "FROM Regulation rt " +
+                "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
+                "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
+                "ORDER BY r.regulationControlPoints";
+
+        List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql,RegulationControlPoint.class).getResultList();
+        return ok(views.html.regulationouttotal.render(regulationControlPoints));
+    }*/
 
 
 

@@ -21,7 +21,7 @@ public class ChapterController extends Controller
         this.jpaApi = jpaApi;
     }
 
-    @Transactional(readOnly = true)
+   @Transactional(readOnly = true)
     public Result getChapterName()
     {
         String sql = "SELECT c FROM Chapter c";
