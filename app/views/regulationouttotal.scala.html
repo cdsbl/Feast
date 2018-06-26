@@ -1,5 +1,6 @@
 @(regulationcontrolpoints:List[RegulationControlPoint])
 <!DOCTYPE html>
+@import helper._
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +16,12 @@
     <h1 class="display-4">F.E.A.S.T. CONTROL POINT TOTALS</h1>
 </div>
 
+
+
 <div class="container">
+    <form method="GET">
+        @CSRF.formField
+
     <table class="table table-striped table-bordered table-hover table-condensed">
         <th>#ID</th>
         <th>Control Point Area</th>
@@ -25,6 +31,7 @@
 
         <tr>
             <td>
+                <input type = "hidden" name="reg-@regulationcontrolpoint.getRegulationControlPointId" value="@regulationcontrolpoint.getRegulationControlPointId">
                 @regulationcontrolpoint.getRegulationControlPointId
             </td>
             <td>@regulationcontrolpoint.getRegulationControlPoints</td>
@@ -32,10 +39,12 @@
             <td>@regulationcontrolpoint.getCount</td>
         </tr>
         }
-    </table>
-</div>
-<div class="container">
 
+    </table>
+    </form>
+</div>
+
+<div class="container">
       <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
 
 </div>

@@ -1,45 +1,3 @@
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('1', 'Purpose and Definitions');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('2', 'Management and Personnel');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('3', 'Food');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('4', 'Equipment, Utensils, and Linens');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('5', 'Water, Plumbing, and Waste');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('6', 'Physical Facilities');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('7', 'Poisonous or Toxic Materials');
-
-INSERT INTO chapter (ChapterNumber, ChapterName);
-VALUES ('8', 'Compliance and Enforcement');
-
-INSERT INTO regulationcontrolpoint (RegulationControlPoints);
-VALUES ('People');
-
-INSERT INTO regulationcontrolpoint (RegulationControlPoints);
-VALUES ('Process');
-
-INSERT INTO regulationcontrolpoint (RegulationControlPoints);
-VALUES ('Place');
-
-INSERT INTO regulationlevel (RegulationLevelName);
-VALUES ('Pf');
-
-INSERT INTO regulationlevel (RegulationLevelName);
-VALUES ('P');
-
-INSERT INTO regulationlevel (RegulationLevelName);
-VALUES ('Core');
-
 INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
 ChapterId, RegulationControlPointId, RegulationLevelId)
 VALUES ('getC110110TitleScope',
@@ -817,6 +775,73 @@ ChapterId, RegulationControlPointId, RegulationLevelId)
 VALUES ('C620112DesignConstIn_C',
 '"(C) Exposed horizontal utility service lines and pipes may not be installed on the floor."',
 6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620113DesignConstIn_A',
+'"(A) In RETAIL FOOD ESTABLISHMENTS in which cleaning methods other than water flushing are used for cleaning floors, the floor and wall junctures shall be coved and closed to no larger than 1 mm (one thirty-second inch)."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620113DesignConstIn_B',
+'"(B) The floors in RETAIL FOOD ESTABLISHMENTS in which water flush cleaning methods are used shall be provided with drains and be graded to drain, and the floor and wall junctures shall be coved and SEALED."',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C620114DesignConstIn_A',
+'"(A) A floor covering such as carpeting or similar material may not be installed as a floor covering in FOOD preparation areas, walk-in refrigerators, WAREWASHING areas, toilet room areas where handwashing lavatories, toilets, and urinals are located, REFUSE storage rooms, or other areas where the floor is subject to moisture, flushing, or spray cleaning methods"',
+6, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C710111LabelIdent',
+'"Containers of POISONOUS OR TOXIC MATERIALS and PERSONAL CARE ITEMS shall bear a legible manufacturers label. Pf"',
+7, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C710211LabelIdent',
+'"Working containers used for storing POISONOUS OR TOXIC MATERIALS such as cleaners and SANITIZERS taken from bulk supplies shall be clearly and individually identified with the common name of the material. Pf"',
+7, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720111OpSupplyApp_A',
+'"POISONOUS OR TOXIC MATERIALS shall be stored so they cannot contaminate FOOD, EQUIPMENT, UTENSILS, LINENS, and SINGLE-SERVICE and SINGLE-USE ARTICLES by: (A) Separating the POISONOUS OR TOXIC MATERIALS by spacing or partitioning; P"',
+7, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720111OpSupplyApp_B',
+'"(B) Locating the POISONOUS OR TOXIC MATERIALS in an area that is not above FOOD, EQUIPMENT, UTENSILS, LINENS, and SINGLE-SERVICE or SINGLE-USE ARTICLES. This paragraph does not apply to EQUIPMENT and UTENSIL cleaners and SANITIZERS that are stored in WAREWASHING areas for availability and convenience if the materials are stored to prevent contamination of FOOD, EQUIPMENT, UTENSILS, LINENS, and SINGLE-SERVICE and SINGLE-USE ARTICLES. P"',
+7, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720211OpSupplyApp_A',
+'"(A) Only those POISONOUS OR TOXIC MATERIALS that are required for the operation and maintenance of a RETAIL FOOD ESTABLISHMENT, such as for the cleaning and SANITIZING of EQUIPMENT and UTENSILS and the control of insects and rodents, shall be allowed in a RETAIL FOOD ESTABLISHMENT. Pf"',
+7, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720211OpSupplyApp_B',
+'"(B) Paragraph (A) of this section does not apply to PACKAGED POISONOUS OR TOXIC MATERIALS that are for retail sale."',
+7, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720212OpSupplyApp_A',
+'"POISONOUS OR TOXIC MATERIALS shall be: (A) Used according to:(1) LAW and RULES AND REGULATIONS.(2) Manufacturers use directions included in labeling, and, for a pesticide, manufacturers label instructions that state that use is allowed in a RETAIL FOOD ESTABLISHMENT, (3) The conditions of certification, if certification is required, for use of the pest control materials, P and (4) Additional conditions that may be established by the REGULATORY AUTHORITY;"',
+7, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720212OpSupplyApp_B',
+'"(B) Applied so that: (1) A HAZARD to EMPLOYEES or other PERSONS is not constituted, P and (2) Contamination including toxic residues due to drip, drain, fog, splash or spray on FOOD, EQUIPMENT, UTENSILS, LINENS, and SINGLE-SERVICE and SINGLE-USE ARTICLES is prevented, and for a RESTRICTED USE PESTICIDE, this is achieved by: P (a) Removing the items, P (b) Covering the items with impermeable covers, P or (c) Taking other appropriate preventive actions, P and (d) Cleaning and SANITIZING EQUIPMENT and UTENSILS after the application"',
+7, 2, 3);
+
 
 
 
