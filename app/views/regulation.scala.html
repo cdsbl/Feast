@@ -2,6 +2,11 @@
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
+<style>
+body {
+    font-size: 20px;
+}
+</style>
 <head>
     <title>Regulation</title>
     <meta charset="utf-8">
@@ -20,12 +25,12 @@
 <form method="POST" action="/regulationoutcount">
     @CSRF.formField
     <div class="container">
-        <h1 class="display-4">F.E.A.S.T. REGULATION SPECIFICS</h1>
+        <h1 class="display-4">F.E.A.S.T. REGULATION SPECIFIC SELECTIONS</h1>
     </div>
 
     <div class="container">
     <table class="table table-striped table-bordered table-hover table-condensed">
-        <th>CODES ----------> SCROLL</th>
+        <th>CODES SCROLL &#9660  &#9650  <i> -----  Press CREATE when finished marking all observed out of compliance regulations.  -----</i></th>
         <th>OUT</th>
         <th>REPORT</th>
         @for(regulation <- regulations){
@@ -50,7 +55,7 @@
 </div>
 </form>
 <div class="container">
-    <a class="btn btn-sm" href="chapter" role="button">DELETE ALL</a>
+    <a class="btn btn-danger" href="chapter" role="button">DELETE ALL</a>
 </div>
 
 </body>

@@ -842,6 +842,18 @@ VALUES ('C720212OpSupplyApp_B',
 '"(B) Applied so that: (1) A HAZARD to EMPLOYEES or other PERSONS is not constituted, P and (2) Contamination including toxic residues due to drip, drain, fog, splash or spray on FOOD, EQUIPMENT, UTENSILS, LINENS, and SINGLE-SERVICE and SINGLE-USE ARTICLES is prevented, and for a RESTRICTED USE PESTICIDE, this is achieved by: P (a) Removing the items, P (b) Covering the items with impermeable covers, P or (c) Taking other appropriate preventive actions, P and (d) Cleaning and SANITIZING EQUIPMENT and UTENSILS after the application"',
 7, 2, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720212OpSupplyApp_C',
+'"(C) A RESTRICTED USE PESTICIDE shall be applied only by an applicator certified as defined in 7 USC 136 Definitions, (e) Certified Applicator, of the Federal Insecticide, Fungicide and Rodenticide Act, or a PERSON under the direct supervision of a certified applicator. Pf"',
+7, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C720311OpSupplyApp',
+'"A container previously used to store POISONOUS OR TOXIC MATERIALS may not be used to store, transport, or dispense FOOD. P"',
+7, 2, 2);
+
 
 
 

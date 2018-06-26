@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-<h1 class="display-4">F.E.A.S.T. SUMMARY</h1>
+<h1 class="display-4">OUT OF COMPLIANCE OBSERVATIONS</h1>
 </div>
 
 <div class="container">
@@ -34,15 +34,18 @@
 
 @for(regulation <- regulations){
 
+
+            <input type = "hidden" name="@regulation.getRegulationId" value="@regulation.getRegulationId">
         <tr>
-            <td><input type = "hidden" name="@regulation.getRegulationId" value="@regulation.getRegulationId"></td>
             <td>
             <i>@regulation.getRegulationId()</i>
             </td>
             <td>
                 <strong>@regulation.getRegulationControlPointId</strong>
             </td>
+
             <td><strong>@regulation.getRegulationLevelId</strong></td>
+
             <td><blockquote>@regulation.getRegulationSpecific</blockquote></td>
         </tr>
 }

@@ -3,6 +3,7 @@ package controllers;
 import models.Chapter;
 import models.Regulation;
 import models.RegulationControlPoint;
+import models.RegulationControlTotal;
 import play.data.FormFactory;
 import play.data.DynamicForm;
 import play.db.jpa.JPAApi;
@@ -68,7 +69,7 @@ public class RegulationController extends Controller
         return ok(views.html.regulationoutcount.render(regulations));
     }
 
-    @Transactional(readOnly = true)
+   @Transactional(readOnly = true)
     public Result getRegulationControlPointCount()
     {
         DynamicForm form = formFactory.form().bindFromRequest();
@@ -84,20 +85,17 @@ public class RegulationController extends Controller
             }
         }
 
-        String sql = "SELECT r FROM RegulationControlPoint r WHERE r.regulationControlPointId IN (:regulationControlPointIds)";
-        List<RegulationControlPoint> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlPoint.class).
+        String sql = "SELECT NEW RegulationControlTotal (r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) " +
+            "FROM Regulation rt " +
+            "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
+            "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
+            "ORDER BY r.regulationControlPoints";
+
+                List<RegulationControlTotal> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlTotal.class).
                 setParameter("regulationControlPointIds", regulationControlPointIds).getResultList();
 
         return ok(views.html.regulationouttotal.render(regulationControlPointId));
 
-
-        /*String sql = "SELECT NEW RegulationControlPoint (r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) " +
-                "FROM Regulation rt " +
-                "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
-                "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
-                "ORDER BY r.regulationControlPoints";*/
-
-       // List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql, RegulationControlPoint.class).getResultList();
     }
 
 

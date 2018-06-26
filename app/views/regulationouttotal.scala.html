@@ -1,4 +1,4 @@
-@(regulationcontrolpoints:List[RegulationControlPoint])
+@(regulationControlPointIds:List[RegulationControlTotal])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -27,16 +27,16 @@
         <th>Control Point Area</th>
         <th>Total</th>
 
-        @for(regulationcontrolpoint<-regulationcontrolpoints){
+        @for(regulationControlPointId<-regulationControlPointIds){
 
+        <input type = "hidden" name="reg-@regulationControlPointId.getRegulationControlPointId" value="@regulationControlPointId.getRegulationControlPointId">
         <tr>
             <td>
-                <input type = "hidden" name="reg-@regulationcontrolpoint.getRegulationControlPointId" value="@regulationcontrolpoint.getRegulationControlPointId">
-                @regulationcontrolpoint.getRegulationControlPointId
+                @regulationControlPointId.getRegulationControlPointId
             </td>
-            <td>@regulationcontrolpoint.getRegulationControlPoints</td>
+            <td>@regulationControlPointId.getRegulationControlPoints</td>
 
-            <td>@regulationcontrolpoint.getCount</td>
+            <td>@regulationControlPointId.getCount</td>
         </tr>
         }
 
@@ -48,8 +48,6 @@
       <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
 
 </div>
-
-
 
 </body>
 </html>
