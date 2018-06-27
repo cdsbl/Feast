@@ -7,11 +7,17 @@ import javax.persistence.Id;
 public class RegulationControlTotal
 {
     @Id
+
+
+
     private int regulationControlPointId;
 
     private String regulationControlPoints;
 
     private long count;
+
+
+
 
     public int getRegulationControlPointId()
     {
@@ -30,6 +36,7 @@ public class RegulationControlTotal
 
     public RegulationControlTotal(int regulationControlPointId, String regulationControlPoints, long count)
     {
+
         this.regulationControlPointId = regulationControlPointId;
         this.regulationControlPoints = regulationControlPoints;
         this.count = count;

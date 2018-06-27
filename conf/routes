@@ -14,8 +14,8 @@ GET     /regulation                     controllers.RegulationController.getRegu
 GET    /regulationoutcount              controllers.RegulationController.getRegulationOutCount
 POST    /regulationoutcount             controllers.RegulationController.postRegulationOutCount
 
-GET     /regulationouttotal             controllers.RegulationController.getRegulationControlPointCount
-POST     /regulationouttotal            controllers.RegulationController.postRegulationControlPointCount
+GET   /regulationouttotal            controllers.RegulationController.getRegulationControlPointCount
+#POST   /regulationouttotal            controllers.RegulationController.postRegulationControlPointCount
 
 
 # Map static resources from the /public folder to the /assets URL path

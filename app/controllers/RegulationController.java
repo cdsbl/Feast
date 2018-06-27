@@ -62,14 +62,41 @@ public class RegulationController extends Controller
             }
         }
 
-        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
+        String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds)";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
+                setParameter("regulationIds", regulationIds).getResultList();
+
+        String summarySQL = "SELECT NEW RegulationControlTotal (cp.regulationControlPointId, cp.regulationControlPoints, COUNT(*)) " +
+                "FROM RegulationControlPoint cp " +
+                "JOIN Regulation r ON cp.regulationControlPointId = r.regulationControlPointId " +
+                "WHERE r.regulationId IN (:regulationIds) " +
+                "GROUP BY cp.regulationControlPointId, cp.regulationControlPoints";
+
+        List<RegulationControlTotal> regulationControlPointIds = jpaApi.em().createQuery(summarySQL, RegulationControlTotal.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
         return ok(views.html.regulationoutcount.render(regulations));
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
+    public Result getRegulationControlPointCount()
+    {
+        String sql = "SELECT r FROM Regulation r";
+        List<Regulation> regulationControlPointIds = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        return ok(views.html.regulationouttotal.render(regulationControlPointIds));
+
+    }
+
+}
+
+
+
+
+
+
+
+
+    /*@Transactional(readOnly = true)
     public Result postRegulationControlPointCount()
     {
         DynamicForm form = formFactory.form().bindFromRequest();
@@ -86,35 +113,29 @@ public class RegulationController extends Controller
         }
 
         String sql = "SELECT NEW RegulationControlTotal (r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) " +
-            "FROM Regulation rt " +
-            "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
-            "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
-            "ORDER BY r.regulationControlPoints";
+                "FROM Regulation rt " +
+                "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
+                "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
+                "ORDER BY r.regulationControlPoints";
 
-                List<RegulationControlTotal> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlTotal.class).
+        List<RegulationControlTotal> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlTotal.class).
                 setParameter("regulationControlPointIds", regulationControlPointIds).getResultList();
 
         return ok(views.html.regulationouttotal.render(regulationControlPointId));
 
-    }
-
-    public Result getRegulationControlPointCount()
-    {
-        //String sql = "SELECT r FROM RegulationControlTotal r";
-        //List<RegulationControlTotal> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlTotal.class).getResultList();
-        return redirect(routes.RegulationController.postRegulationControlPointCount());
-
-    }
+    }*/
 
 
-    @Transactional(readOnly = true)
+
+
+   /* @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
         String sql = "SELECT r FROM Regulation r";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
         return ok(views.html.regulation.render(regulations));
     }
-}
+}*/
 
 
 
@@ -139,71 +160,7 @@ public class RegulationController extends Controller
     }*/
 
 
-
-/*<div class="container">
-<div class="panel-heading"><strong>CONTENTS</strong></div>
-<div class="panel-body">
-<ul class="list-group">
-<li class="list-group-item">1.  Purpose and Definitions</li>
-<li class="list-group-item">2.  Management and Personnel</li>
-<li class="list-group-item">3.  Food</li>
-<li class="list-group-item">4.  Equipment, Utensils, and Linens</li>
-<li class="list-group-item">5.  Water, Plumbing, and Waste</li>
-<li class="list-group-item">6.  Physical Facilities</li>
-<li class="list-group-item">7.  Poisonous or Toxic Materials</li>
-<li class="list-group-item">8.  Compliance and Enforcement</li>
-</ul>
-</div>
-</div>*/
-
-
-//<table class="table table-hover table-bordered">
 //<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
-
-/*<tr>
-<td>
-
-<p>@regulation.getRegulationSpecific</p>
-
-</td>
-<td>
-<div class="checkbox">
-<label><input type="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId">OUT</label>
-</div>
-
-
-</td>
-</tr>*/
-
-//<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
-
-
-
-
-
-
-/*<a href="regulation.getRegulationId">*/
-/* @for(regulation <- regulations){*/
-
-           /*
-           for (String formName : formNames)
-            {
-                if (formName.startsWith("cat-"))
-                {
-                    int categoryId = Integer.parseInt(formName.replace("cat-", ""));
-                    categoryIds.add(categoryId);
-                }
-            }
-
-            String sql = "SELECT c FROM Category c WHERE categoryId IN (:categoryIds) ORDER BY name";
-            List<Category> categories = jpaApi.em().createQuery(sql, Category.class).
-                    setParameter("categoryIds", categoryIds).getResultList();
-
-            return ok(views.html.CategoriesSelected.render(categories));
-        }
-
-
-
 
 
 
@@ -215,3 +172,6 @@ public class RegulationController extends Controller
         return ok(views.html.regulation.render(regulations));
     }*/
 
+/*<form method="GET" action="/regulationoutcount">
+@CSRF.formField*/
+// <input type = "hidden" name="reg-@regulationControlPointId.getRegulationControlPointId" value="reg-@regulationControlPointId.getRegulationControlPointId">
