@@ -1,4 +1,4 @@
-@(regulationControlPointIds:List[RegulationControlTotal])
+@(regulationControlPointIds: List[RegulationControlTotal])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -29,7 +29,7 @@
 
         @for(regulationControlPointId<-regulationControlPointIds){
 
-        <input type = "hidden" name="reg-@regulationControlPointId.getRegulationControlPointId" value="@regulationControlPointId.getRegulationControlPointId">
+        <input type = "hidden" name="reg-@regulationControlPointId.getRegulationControlPointId" value="reg-@regulationControlPointId.getRegulationControlPointId">
         <tr>
             <td>
                 @regulationControlPointId.getRegulationControlPointId

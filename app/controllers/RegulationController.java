@@ -69,8 +69,8 @@ public class RegulationController extends Controller
         return ok(views.html.regulationoutcount.render(regulations));
     }
 
-   @Transactional(readOnly = true)
-    public Result getRegulationControlPointCount()
+    @Transactional(readOnly = true)
+    public Result postRegulationControlPointCount()
     {
         DynamicForm form = formFactory.form().bindFromRequest();
         Set<String> formNames = form.rawData().keySet();
@@ -95,6 +95,14 @@ public class RegulationController extends Controller
                 setParameter("regulationControlPointIds", regulationControlPointIds).getResultList();
 
         return ok(views.html.regulationouttotal.render(regulationControlPointId));
+
+    }
+
+    public Result getRegulationControlPointCount()
+    {
+        //String sql = "SELECT r FROM RegulationControlTotal r";
+        //List<RegulationControlTotal> regulationControlPointId = jpaApi.em().createQuery(sql, RegulationControlTotal.class).getResultList();
+        return redirect(routes.RegulationController.postRegulationControlPointCount());
 
     }
 
