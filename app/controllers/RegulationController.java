@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Chapter;
+
 import models.Regulation;
 import models.RegulationControlPoint;
 import models.RegulationControlTotal;
@@ -79,10 +79,10 @@ public class RegulationController extends Controller
     }
 
     @Transactional
-    public Result getRegulationControlPointCount()
+    public Result postRegulationControlPointCount()
     {
-        String sql = "SELECT r FROM Regulation r";
-        List<Regulation> regulationControlPointIds = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        String sql = "SELECT r FROM RegulationControlTotal r";
+        List<RegulationControlTotal> regulationControlPointIds = jpaApi.em().createQuery(sql, RegulationControlTotal.class).getResultList();
         return ok(views.html.regulationouttotal.render(regulationControlPointIds));
 
     }

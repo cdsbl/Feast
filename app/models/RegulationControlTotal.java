@@ -8,18 +8,13 @@ public class RegulationControlTotal
 {
     @Id
 
-
-
     private int regulationControlPointId;
 
     private String regulationControlPoints;
 
     private long count;
 
-
-
-
-    public int getRegulationControlPointId()
+    public int getRegulationControlPointIds()
     {
         return regulationControlPointId;
     }
@@ -34,11 +29,4 @@ public class RegulationControlTotal
         return count;
     }
 
-    public RegulationControlTotal(int regulationControlPointId, String regulationControlPoints, long count)
-    {
-
-        this.regulationControlPointId = regulationControlPointId;
-        this.regulationControlPoints = regulationControlPoints;
-        this.count = count;
-    }
 }

@@ -27,20 +27,6 @@ public class Chapter
         return chapterName;
     }
 
-    public void setChapterId(int chapterId)
-    {
-        this.chapterId = chapterId;
-    }
-
-    public void setChapterNumber(int chapterNumber)
-    {
-        this.chapterNumber = chapterNumber;
-    }
-
-    public void setChapterName(String chapterName)
-    {
-        this.chapterName = chapterName;
-    }
 
 }
 

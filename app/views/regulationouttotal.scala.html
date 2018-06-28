@@ -1,4 +1,4 @@
-@(regulationControlPointIds: List[Regulation])
+@(regulationControlPointIds: List[RegulationControlTotal])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -23,10 +23,10 @@
         <th>#ID</th>
 
 
-        @for(regulation<-regulationControlPointIds){
+        @for(regulationControlTotal<-regulationControlPointIds){
             <tr>
             <td>
-                @regulation.getRegulationControlPointId
+                @regulationControlTotal.getRegulationControlPointIds()
             </td>
 
         </tr>
