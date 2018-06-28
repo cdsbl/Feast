@@ -8,11 +8,11 @@ public class RegulationControlTotal
 {
     @Id
 
-    private int regulationControlPointId;
+    private int regulationControlPointId;//DO NOT TOUCH
 
-    private String regulationControlPoints;
+    private String regulationControlPoints;//DO NOT TOUCH
 
-    private long count;
+    private long count;//DO NOT TOUCH
 
     public int getRegulationControlPointIds()
     {
@@ -29,4 +29,10 @@ public class RegulationControlTotal
         return count;
     }
 
+    public RegulationControlTotal(int regulationControlPointId, String regulationControlPoints, long count)
+    {
+        this.regulationControlPointId = regulationControlPointId;
+        this.regulationControlPoints = regulationControlPoints;
+        this.count = count;
+    }
 }

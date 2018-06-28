@@ -854,6 +854,66 @@ VALUES ('C720311OpSupplyApp',
 '"A container previously used to store POISONOUS OR TOXIC MATERIALS may not be used to store, transport, or dispense FOOD. P"',
 7, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810110CodeApp_A',
+'"(A) The REGULATORY AUTHORITY shall apply these RULES AND REGULATIONS to promote its underlying purpose, as specified in Subpart 1-102.10, of safeguarding public health and ensuring that FOOD is safe, unADULTERATED, and honestly presented when offered to the CONSUMER."',
+8, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810110CodeApp_B',
+'"(B) In enforcing the provisions of these RULES AND REGULATIONS, the REGULATORY AUTHORITY shall assess existing facilities or EQUIPMENT that were in use before the effective date of these RULES AND REGULATIONS based on the following considerations:(1) Whether the facilities or EQUIPMENT are in good repair and capable of being maintained in a sanitary condition; (2) Whether FOOD-CONTACT SURFACES comply with Subpart 4-101; (3) Whether the capacities of cooling, heating, and holding EQUIPMENT are sufficient to comply with Subpart 4-301.11; and (4) The existence of a documented agreement with the PERMIT HOLDER that the facilities or EQUIPMENT will be replaced as specified under Subparagraph 8-304.11(G)"',
+8, 3, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810210CodeApp_A',
+'"(A) If necessary to protect against public health HAZARDS or nuisances, the REGULATORY AUTHORITY may impose specific requirements in addition to the requirements contained in these RULES AND REGULATIONS that are authorized by LAW."',
+8, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810210CodeApp_B',
+'"(B) The REGULATORY AUTHORITY shall document the conditions that necessitate the imposition of additional requirements and the underlying public health rationale. The documentation shall be provided to the PERMIT applicant or PERMIT HOLDER and a copy shall be maintained in the REGULATORY AUTHORITY’S file for the RETAIL FOOD ESTABLISHMENT."',
+8, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810310CodeApp',
+'"The REGULATORY AUTHORITY may grant a VARIANCE by modifying or waiving the requirements of THESE RULES AND REGULATIONS if in the opinion of the REGULATORY AUTHORITY a health HAZARD or nuisance will not result from the VARIANCE. If a VARIANCE is granted, the REGULATORY AUTHORITY shall retain the information specified under Subpart 8-103.11 in its records for the RETAIL FOOD ESTABLISHMENT."',
+8, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810311CodeApp_A',
+'"Before a VARIANCE from a requirement of these RULES AND REGULATIONS is APPROVED, the information that shall be provided by the PERSON requesting the VARIANCE and retained in the REGULATORY AUTHORITYS file on the RETAIL FOOD ESTABLISHMENT includes: (A) A statement of the proposed VARIANCE of these RULES AND REGULATIONS requirement citing relevant Regulation section numbers; Pf"',
+8, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810311CodeApp_B',
+'"(B) An analysis of the rationale for how the potential public health HAZARDS and nuisances addressed by the relevant Regulation sections will be alternatively addressed by the proposal; Pf"',
+8, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810311CodeApp_C',
+'"(C) A HACCP PLAN if required as specified under Subparagraph 8-201.13(A) that includes the information specified under Subpart 8-201.14 as it is relevant to the VARIANCE requested. Pf"',
+8, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810312CodeApp_A',
+'"If the REGULATORY AUTHORITY grants a VARIANCE as specified in Subpart 8-103.10, or a HACCP PLAN is otherwise required as specified under Subpart 8-201.13, the PERMIT HOLDER shall: (A) Comply with the HACCP PLANs and procedures that are submitted as specified under Subpart 8-201.14 and APPROVED as a basis for the modification or waiver; P"',
+8, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C810312CodeApp_B',
+'"(B) Maintain and provide to the REGULATORY AUTHORITY, upon request, records specified under Subparagraphs 8-201.14(D) and (E) that demonstrate that the following are routinely employed; (1) Procedures for monitoring CRITICAL CONTROL POINTS, Pf (2) Monitoring of the CRITICAL CONTROL POINTS, Pf (3) Verification of the effectiveness of an operation or process, Pf and  (4) Necessary corrective actions if there is failure at a CRITICAL CONTROL POINT. Pf"',
+8, 2, 1);
+
 
 
 

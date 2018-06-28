@@ -1,4 +1,4 @@
-@(regulationControlPointIds: List[RegulationControlTotal])
+@(regulationControlPoint: List[RegulationControlPoint])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -15,7 +15,8 @@
 <div class="container">
     <h1 class="display-4">F.E.A.S.T. CONTROL POINT TOTALS</h1>
 </div>
-
+<form method="POST" action="/regulationouttotal">
+    @CSRF.formField
 
 
 <div class="container">
@@ -23,16 +24,18 @@
         <th>#ID</th>
 
 
-        @for(regulationControlTotal<-regulationControlPointIds){
+        @for(regulationControlPoint<-regulationControlPoint){
             <tr>
             <td>
-                @regulationControlTotal.getRegulationControlPointIds()
+                @regulationControlPoint.getRegulationControlPoints()
             </td>
 
         </tr>
         }
 
     </table>
+</div>
+</form>
 </div>
 
 <div class="container">

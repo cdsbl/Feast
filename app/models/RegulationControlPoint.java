@@ -8,9 +8,9 @@ public class RegulationControlPoint
 {
     @Id
 
-    private int regulationControlPointId;
+    private int regulationControlPointId;//do not touch
 
-    private String regulationControlPoints;
+    private String regulationControlPoints;//do not touch
 
 
     public int getRegulationControlPointId()
