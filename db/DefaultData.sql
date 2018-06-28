@@ -914,6 +914,12 @@ VALUES ('C810312CodeApp_B',
 '"(B) Maintain and provide to the REGULATORY AUTHORITY, upon request, records specified under Subparagraphs 8-201.14(D) and (E) that demonstrate that the following are routinely employed; (1) Procedures for monitoring CRITICAL CONTROL POINTS, Pf (2) Monitoring of the CRITICAL CONTROL POINTS, Pf (3) Verification of the effectiveness of an operation or process, Pf and  (4) Necessary corrective actions if there is failure at a CRITICAL CONTROL POINT. Pf"',
 8, 2, 1);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C820111PlanSubmit_A',
+'"A PERMIT applicant or PERMIT HOLDER shall submit to the REGULATORY AUTHORITY properly prepared plans and specifications for review and approval before: (A) The construction of a RETAIL FOOD ESTABLISHMENT; Pf"',
+8, 2, 1);
+
 
 
 

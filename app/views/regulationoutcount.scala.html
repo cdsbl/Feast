@@ -1,4 +1,4 @@
-@(regulation: List[Regulation])
+@(regulation: List[Regulation], regulationControlTotals: List[RegulationControlTotal])
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -49,6 +49,24 @@
 
         </tr>
 }
+
+
+
+        <form action ="@routes.RegulationController.getRegulationOutCount" method="POST">
+            @CSRF.formField
+        @for(regulationControlTotal <- regulationControlTotals){
+
+        <input type = "hidden" name="@regulationControlTotal.getRegulationControlPoints" value="@regulationControlTotal.getRegulationControlPoints">
+
+            <p>@regulationControlTotal.getRegulationControlPoints</p>
+
+            <input type = "hidden" name="@regulationControlTotal.getCount" value="@regulationControlTotal.getCount">
+
+            <p>@regulationControlTotal.getCount</p>
+
+        }
+        </form>
+
         <a class="btn btn-primary btn-lg" href="regulationouttotal" role="button">CHART</a>
     </table>
     </form>

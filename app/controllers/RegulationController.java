@@ -11,6 +11,8 @@ import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import scala.Dynamic;
+import views.html.helper.form;
+import views.html.regulation;
 
 import javax.inject.Inject;
 import javax.persistence.Entity;
@@ -43,7 +45,7 @@ public class RegulationController extends Controller
     {
         String sql = "SELECT r FROM Regulation r";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
-        return ok(views.html.regulationoutcount.render(regulations));
+        return ok(views.html.regulationoutcount.render(regulations, null));
     }
 
     @Transactional
@@ -75,27 +77,17 @@ public class RegulationController extends Controller
         List<RegulationControlTotal> regulationControlPointIds = jpaApi.em().createQuery(summarySQL, RegulationControlTotal.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
-        return ok(views.html.regulationoutcount.render(regulations));
+        return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
     }
 
-    @Transactional(readOnly = true)
-    public Result getRegulationControlPointCount()
-    {
-        String sql = "SELECT r FROM RegulationControlPoint r ";
-        List<RegulationControlPoint> regulationControlPoint = jpaApi.em().createQuery(sql, RegulationControlPoint.class).getResultList();
-        return ok(views.html.regulationouttotal.render(regulationControlPoint));
 
-    }
-    @Transactional
-    public Result postRegulationControlPointCount()
-    {
-        String sql = "SELECT r FROM RegulationControlPoint r ";
-        List<RegulationControlPoint> regulationControlPoint = jpaApi.em().createQuery(sql, RegulationControlPoint.class).getResultList();
-        return ok(views.html.regulationouttotal.render(regulationControlPoint));
 
-    }
 
 }
+
+
+
+
 
 
 
@@ -139,7 +131,6 @@ public class RegulationController extends Controller
         return ok(views.html.regulation.render(regulations));
     }
 }*/
-
 
 
 // DO NOT DELETE THIS!!

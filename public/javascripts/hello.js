@@ -1,12 +1,12 @@
 var labels = document.getElementById("chartData").getAttribute("data-labels").split(",");
 var data = document.getElementById("chartData").getAttribute("data-data").split(",");
-var ctx = document.getElementById("regulation").getContext('2d');
+var ctx = document.getElementById("total").getContext('2d');
 var myChart = new Chart(ctx, {
    type: 'bar',
    data: {
        labels: labels,
        datasets: [{
-           label: 'Level',
+           label: 'Control',
            data: data,
            backgroundColor: [
                'rgba(255, 99, 132, 0.2)',
