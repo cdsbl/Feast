@@ -55,6 +55,7 @@ public class RegulationController extends Controller
         Set<String> formNames = form.rawData().keySet();
         List<Integer> regulationIds = new ArrayList<>();
 
+
         for (String formName : formNames)
         {
             if (formName.startsWith("reg-"))
@@ -62,6 +63,7 @@ public class RegulationController extends Controller
                 int regulationId = Integer.parseInt(formName.replace("reg-", ""));
                 regulationIds.add(regulationId);
             }
+           
         }
 
         String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds)";
@@ -77,11 +79,10 @@ public class RegulationController extends Controller
         List<RegulationControlTotal> regulationControlPointIds = jpaApi.em().createQuery(summarySQL, RegulationControlTotal.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
-        return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
+
+            return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
+
     }
-
-
-
 
 }
 

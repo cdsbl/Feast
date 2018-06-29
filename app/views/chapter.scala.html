@@ -3,36 +3,46 @@
 @import helper._
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <script src="/assets/lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="/assets/lib/chart.js/utils.js"></script>
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
 
-<div class="container">
-    <h1>F.E.A.S.T.</h1>
-        <h2>Food Establishments of Arkansas Safety Tool</h2>
-        <div class="row">
-            <div class="col-lg-11"></div>
-            <div class="col-lg-1"><a class="btn btn-primary btn-lg" href="regulation" role="button">Begin</a></div>
-        </div>
+
+    <div class="container">
+        <h1 class="display-4"><strong>F.E.A.S.T.</strong></h1>
+       <h2><i>food establishment of Arkansas search tool</i></h2>
+    <h3>Observe, Select, and Review Out of Compliance Regulation Specifics</h3>
 </div>
 
-
+<div class="container">
 <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <p>Chapter 1</p>
-    </div>
-    </div>
+    <div class="col-lg-11"></div>
+    <div class="col-lg-1"><a class="btn btn-primary btn-lg" href="regulation" role="button">SEARCH</a></div>
+</div>
+</div>
+    <br>
+    <br>
+<div class="container">
+    <table class="table table-condensed">
+    <th>Chapter Number</th>
+    <th>Title</th>
+    @for(chapter <- chapters){
+<tr>
+    <td>
+        @chapter.getChapterNumber()
 
-
-
+    </td>
+    <td>
+        @chapter.getChapterName()
+    </td>
+</tr>
+}
+</table>
+</div>
 
 </body>
 </html>
