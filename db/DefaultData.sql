@@ -920,6 +920,14 @@ VALUES ('C820111PlanSubmit_A',
 '"A PERMIT applicant or PERMIT HOLDER shall submit to the REGULATORY AUTHORITY properly prepared plans and specifications for review and approval before: (A) The construction of a RETAIL FOOD ESTABLISHMENT; Pf"',
 8, 2, 1);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320114SospocRecords_A',
+'"(A) FISH that are received for sale or service shall be: (1) Commercially and legally caught or harvested; P or (2) APPROVED for sale or service. P"',
+3, 2, 2);
+
+
+
 
 
 

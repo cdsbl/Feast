@@ -1,4 +1,4 @@
-@(regulationControlTotals: List[RegulationControlTotal])
+@(peopleCount: Integer, processCount: Integer, placeCount: Integer)
 <!DOCTYPE html>
 @import helper._
 <html lang="en">
@@ -11,30 +11,16 @@
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+<p>@peopleCount</p>
+<p>@processCount</p>
+<p>@placeCount</p>
 
-<div class="container">
-    <h1 class="display-4">F.E.A.S.T. CONTROL POINT CHART</h1>
-</div>
-
-<form action="@routes.RegulationController.getRegulationOutCount" method="GET">
-    @CSRF.formField
-    @for(regulationControlTotal <- regulationControlTotals){
-<input type = "text" name="@regulationControlTotal.getRegulationControlPoints" value="@regulationControlTotal.getRegulationControlPoints">
-<br>
-<input type = "text" name="@regulationControlTotal.getCount" value="@regulationControlTotal.getCount">
-    }
-</form>
-
-<br>
-<br>
-
-
-
-<canvas id="total" width="100" height="100"></canvas>
+<canvas id="totals" width="10" height="10"></canvas>
 <script type = "text/javascript" id="chartData"
         src = "assets/javascripts/hello.js"
-        data-labels = "@for(regulationControlTotal <- regulationControlTotals){@regulationControlTotal.getRegulationControlPoints,}"
-        data-data = "@for(regulationControlTotal <- regulationControlTotals){@regulationControlTotal.getCount,}"></script>
+        data-labels = "people; process; place"
+        data-data = "@peopleCount; @processCount; @placeCount;"></script>
+
 
 <div class="container">
       <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
@@ -42,3 +28,4 @@
 
 </body>
 </html>
+

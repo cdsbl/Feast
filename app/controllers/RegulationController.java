@@ -48,6 +48,36 @@ public class RegulationController extends Controller
         return ok(views.html.regulationoutcount.render(regulations, null));
     }
 
+    public Result getRegulationControlPointCount()
+    {
+        DynamicForm form = formFactory.form().bindFromRequest();
+        String peopleText = form.get("People");
+        String processText = form.get("Process");
+        String placeText = form.get("Place");
+
+        int peopleCount = 0;
+        int processCount = 0;
+        int placeCount = 0;
+
+        if (peopleText != null)
+        {
+            peopleCount = Integer.parseInt(peopleText);
+        }
+
+        if (processText != null)
+        {
+            processCount = Integer.parseInt(processText);
+        }
+
+        if (placeText != null)
+        {
+            placeCount = Integer.parseInt(placeText);
+        }
+
+        return ok(views.html.regulationouttotal.render(peopleCount, processCount, placeCount));
+
+    }
+
     @Transactional
     public Result postRegulationOutCount()
     {
@@ -63,7 +93,6 @@ public class RegulationController extends Controller
                 int regulationId = Integer.parseInt(formName.replace("reg-", ""));
                 regulationIds.add(regulationId);
             }
-           
         }
 
         String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds)";
@@ -79,18 +108,10 @@ public class RegulationController extends Controller
         List<RegulationControlTotal> regulationControlPointIds = jpaApi.em().createQuery(summarySQL, RegulationControlTotal.class).
                 setParameter("regulationIds", regulationIds).getResultList();
 
-
-            return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
+        return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
 
     }
-
 }
-
-
-
-
-
-
 
        /*@Transactional(readOnly = true)
     public Result postRegulationControlPointCount()
@@ -122,8 +143,6 @@ public class RegulationController extends Controller
     }*/
 
 
-
-
    /* @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
@@ -141,19 +160,6 @@ public class RegulationController extends Controller
 
 
 // DO NOT DELETE THIS EITHER!
-
-   /* public Result getRegulationControlPointCount()
-    {
-        String sql = "SELECT NEW RegulationControlPoint(r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) "+
-                "FROM Regulation rt " +
-                "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
-                "GROUP BY r.regulationControlPointId, r.regulationControlPoints " +
-                "ORDER BY r.regulationControlPoints";
-
-        List<RegulationControlPoint> regulationControlPoints = jpaApi.em().createQuery(sql,RegulationControlPoint.class).getResultList();
-        return ok(views.html.regulationouttotal.render(regulationControlPoints));
-    }*/
-
 
 //<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
 

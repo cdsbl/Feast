@@ -14,7 +14,35 @@
 <div class="container">
 <h1 class="display-4">OUT OF COMPLIANCE OBSERVATIONS</h1>
 </div>
-
+<div class="container">
+<form action ="@routes.RegulationController.getRegulationControlPointCount" method="GET">
+    @CSRF.formField
+    @for(regulationControlTotal <- regulationControlTotals){
+    <input type = "hidden" name="@regulationControlTotal.getRegulationControlPoints" value="@regulationControlTotal.getCount">
+    }
+    <input type="submit" class="btn btn-primary btn-lg" value="CHART"></input>
+</form>
+</div>
+<div class="container">
+    <form method="POST" action="/regulationouttotal">
+        @CSRF.formField
+    </form>
+    <table class="table table-striped table-bordered table-hover table-condensed">
+        <tr><th>#</th>
+        <th>CCP</th>
+        <th>LEVEL</th>
+        <th>SPECIFIC</th></tr>
+        @for(regulation <- regulation){
+        <input type ="hidden" name="reg-@regulation.getRegulationId" value="reg-@regulation.getRegulationId">
+        <tr>
+            <td><i>@regulation.getRegulationId()</i></td>
+            <td><strong>@regulation.getRegulationControlPointId()</strong></td>
+            <td><strong>@regulation.getRegulationLevelId</strong></td>
+            <td><blockquote>@regulation.getRegulationSpecific</blockquote></td>
+        </tr>
+        }
+    </table>
+</div>
 <div class="container">
     <table class="table table-bordered">
         <th># Office Use Only</th>
@@ -24,62 +52,10 @@
 </div>
 
 <div class="container">
-    <form method="POST" action="/regulationouttotal">
-        @CSRF.formField
-    <table class="table table-striped table-bordered table-hover table-condensed">
-        <th>#</th>
-        <th>CCP</th>
-        <th>LEVEL</th>
-        <th>SPECIFIC</th>
-
-@for(regulation <- regulation){
-
-            <input type = "hidden" name="reg-@regulation.getRegulationId" value="reg-@regulation.getRegulationId">
-        <tr>
-            <td>
-            <i>@regulation.getRegulationId()</i>
-            </td>
-            <td>
-                <strong>@regulation.getRegulationControlPointId()</strong>
-            </td>
-
-            <td><strong>@regulation.getRegulationLevelId</strong></td>
-
-            <td><blockquote>@regulation.getRegulationSpecific</blockquote></td>
-
-        </tr>
-}
-
-
-
-        <form action ="@routes.RegulationController.getRegulationOutCount" method="POST">
-            @CSRF.formField
-        @for(regulationControlTotal <- regulationControlTotals){
-
-        <input type = "hidden" name="@regulationControlTotal.getRegulationControlPoints" value="@regulationControlTotal.getRegulationControlPoints">
-
-            <p>@regulationControlTotal.getRegulationControlPoints</p>
-
-            <input type = "hidden" name="@regulationControlTotal.getCount" value="@regulationControlTotal.getCount">
-
-            <p>@regulationControlTotal.getCount</p>
-
-        }
-        </form>
-
-        <a class="btn btn-primary btn-lg" href="regulationouttotal" role="button">CHART</a>
-    </table>
-    </form>
-</div>
-<div class="container">
-
-
-
 <a class="btn btn-primary btn-lg" href="regulation" role="button">UNDO</a>
-
 <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
-
 </div>
+
 
 </body>
 </html>

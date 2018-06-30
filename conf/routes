@@ -14,7 +14,7 @@ GET     /regulation                     controllers.RegulationController.getRegu
 GET    /regulationoutcount              controllers.RegulationController.getRegulationOutCount
 POST    /regulationoutcount             controllers.RegulationController.postRegulationOutCount
 
-#GET   /regulationouttotal            controllers.RegulationController.getRegulationControlPointCount
+GET   /regulationouttotal            controllers.RegulationController.getRegulationControlPointCount
 #POST   /regulationouttotal            controllers.RegulationController.postRegulationControlPointCount
 
 
