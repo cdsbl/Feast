@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-<h1 class="display-4">OUT OF COMPLIANCE OBSERVATIONS</h1>
+<h1 class="display-4">OUT OF COMPLIANCE REVIEW</h1>
 </div>
 <div class="container">
 <form action ="@routes.RegulationController.getRegulationControlPointCount" method="GET">
@@ -20,7 +20,7 @@
     @for(regulationControlTotal <- regulationControlTotals){
     <input type = "hidden" name="@regulationControlTotal.getRegulationControlPoints" value="@regulationControlTotal.getCount">
     }
-    <input type="submit" class="btn btn-primary btn-lg" value="CHART"></input>
+    <input type="submit" class="btn btn-primary btn-lg" value="VIEW CHART"></input>
 </form>
 </div>
 <div class="container">
@@ -46,14 +46,14 @@
 <div class="container">
     <table class="table table-bordered">
         <th># Office Use Only</th>
-        <th>CCP    1:People 2:Process 3:Place</th>
+        <th>CCP 1=> People  CCP 2=> Process CCP 3=> Place</th>
         <th>LEVEL  1:Pf     2:P       3:Core</th>
     </table>
 </div>
 
 <div class="container">
-<a class="btn btn-primary btn-lg" href="regulation" role="button">UNDO</a>
-<a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
+<a class="btn btn-primary btn-sm" href="regulation" role="button">UNDO</a>
+<a class="btn btn-primary btn-sm" href="chapter" role="button">EXIT</a>
 </div>
 
 

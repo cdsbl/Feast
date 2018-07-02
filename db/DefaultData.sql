@@ -926,6 +926,85 @@ VALUES ('C320114SospocRecords_A',
 '"(A) FISH that are received for sale or service shall be: (1) Commercially and legally caught or harvested; P or (2) APPROVED for sale or service. P"',
 3, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320115SospocRecords_A',
+'"(A) MOLLUSCAN SHELLFISH shall be obtained from sources according to THESE RULES AND REGULATIONS and the requirements specified in the U.S. Department of Health and Human Services, Public Health Service, Food and Drug Administration, National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320115SospocRecords_B',
+'"(B) MOLLUSCAN SHELLFISH received in interstate commerce shall be from sources that are listed in the Interstate Certified Shellfish Shippers List. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320116SospocRecords',
+'"If wild mushrooms are to be sold they must be: (1) Cultivated wild mushroom species that are grown, harvested, and processed in an operation that is regulated by the FOOD regulatory agency that has jurisdiction over the operation; or (2) Wild mushroom species in PACKAGED form and are the product of a FOOD PROCESSING PLANT that is regulated by the FOOD regulatory agency that has jurisdiction over the plant"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320117SospocRecords_A',
+'"(A) If GAME ANIMALS are received for sale or service they shall be: (1) Commercially raised for food P and:(a) Raised slaughtered, and processed under a voluntary inspection program that is conducted by the agency that has animal health jurisdiction, P or (b) Under a routine inspection program conducted by a regulatory agency other than the agency that has animal health jurisdiction, P and (c) Raised, slaughtered, and processed according to:(i) LAWS governing MEAT and POULTRY as determined by the agency that has animal health jurisdiction and the agency that conducts the inspection program, P and(ii) Requirements which are developed by the agency that has animal health jurisdiction and the agency that conducts the inspection program with consideration of factors such as the need for antemortem and postmortem examination by an APPROVED veterinarian or veterinarian’s designee; P(2) Under a voluntary inspection program administered by the USDA for game animals such as exotic animals (reindeer, elk, deer, antelope, water buffalo, or bison) that are inspected and APPROVED in accordance with 9 CFR 352 Exotic Animals; Voluntary Inspection or rabbits that are inspected and certified in accordance with 9 CFR 354 Voluntary Inspection of Rabbits and Edible Products Thereof; P(3) As allowed by LAW, for wild GAME ANIMALS that are live-caught(a) Under a routine inspection program conducted by a regulatory agency such as the agency that has animal health jurisdiction, P and"
+    "(b)Slaughtered and processed according to:(i)LAWS governing MEAT and POULTRY as determined by the agency that has animal health jurisdiction and the agency that conducts the inspection program, P and(ii) Requirements which are developed by the agency that has animal health jurisdiction and the agency that conducts the inspection program with consideration of factors such as the need for antemortem and postmortem examination by an APPROVED veterinarian or veterinarian’s designee; P or(4) As ALLOWED by LAW, for field-dressed wild GAME ANIMALS under a routine inspection program that ensures the animals:(a) Receive a postmortem examination by an APPROVED veterinarian or veterinarians designee, P or (b) Are field-dressed and transported according to requirements specified by the agency that has animal health jurisdiction and the agency that conducts the inspection program, P and(c) Are processed according to LAWS governing MEAT and POULTRY as determined by the agency that has animal health jurisdiction and the agency that conducts the inspection program. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320117SospocRecords_B',
+'"(B) A GAME ANIMAL may not be received for sale or service if it is a species of wildlife that is listed in 50 CFR 17 Endangered and Threatened Wildlife and Plants."',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_A',
+'"(A) Except as specified in Paragraph (B) of this section, refrigerated, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) shall be at a o temperature of 5 C (41 F) or below when received. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_B',
+'"(B) If a temperature other than 5°C (41°F) for A POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) is specified in LAW governing its distribution, such as LAWS governing milk and MOLLUSCAN SHELLFISH, the FOOD may be received at the specified temperature."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_C',
+'"(C) Raw shell EGGS shall be received in refrigerated equipment that maintains an ambient air temperature of 7 C (45 F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_D',
+'"(D) POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) that is cooked to a temperature and for a time specified under Subpart 3-401.11 - 3-401.13 and received hot shall be at a temperature of 57 C (135 F) or above. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_E',
+'"(E) A FOOD that is labeled frozen and shipped frozen by a FOOD PROCESSING PLANT shall be received frozen. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320211SospocRecords_F',
+'"(F) Upon receipt, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) shall be free of evidence of previous temperature abuse. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320212SospocRecords',
+'"FOOD may not contain unAPPROVED FOOD ADDITIVES or ADDITIVES that exceed amounts specified in 21 CFR 170-180 relating TO FOOD ADDITIVES, generally recognized as safe or prior sanctioned substances that exceed amounts specified in 21 CFR 181-186, substances that exceed amounts specified in 9 CFR Subpart C Section 424.21(b) Food ingredients and sources of radiation, or pesticide residues that exceed provisions specified in 40 CFR180 Tolerances for pesticide chemicals in food, and exceptions. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320213SospocRecords',
+'"EGGS shall be received clean and sound and may not exceed the RESTRICTED EGG tolerances for U.S. CONSUMER Grade B as specified in United States Standards, Grades and Weight Classes for Shell Eggs, AMS 56 200et seq., administered by the Agricultural Marketing Service of USDA. P"',
+3, 2, 2);
+
 
 
 

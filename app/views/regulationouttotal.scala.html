@@ -4,28 +4,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CONTROL POINT AREAS</title>
+    <title>FEAST CHART</title>
     <meta charset="UTF-8">
     <script src="/assets/lib/chart.js/Chart.bundle.min.js"></script>
     <script src="/assets/lib/chart.js/utils.js"></script>
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-<p>@peopleCount</p>
-<p>@processCount</p>
-<p>@placeCount</p>
-
-<canvas id="totals" width="10" height="10"></canvas>
+<div class="container">
+    <h1 class="display-4">Improvements are needed in these areas:</h1>
+</div>
+<div class="container">
+<div id="chartContainer" style="height: 1px; width: 5%;">
+<canvas id="totals">
 <script type = "text/javascript" id="chartData"
         src = "assets/javascripts/hello.js"
-        data-labels = "people; process; place"
-        data-data = "@peopleCount; @processCount; @placeCount;"></script>
-
-
+        data-labels = ",PEOPLE,PROCESS,PLACE,"
+        data-data = "{,@peopleCount,@processCount,@placeCount,}"></script>
+</canvas>
+</div>
+</div>
 <div class="container">
-      <a class="btn btn-primary btn-lg" href="chapter" role="button">EXIT</a>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11"><blockquote>The violations are categorized in three areas where focused improvements will be necessary. To safeguard public health and provide to consumers food that is safe, unadulterated, and honestly presented, use the information shown above to control areas of compliance problems.</blockquote></div>
+    </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-11"></div>
+        <div class="col-lg-1"><a class="btn btn-primary btn-sm" href="chapter" role="button">EXIT</a></div>
+    </div>
+</div>
 </body>
 </html>
+
 
