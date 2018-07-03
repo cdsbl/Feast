@@ -1005,7 +1005,306 @@ VALUES ('C320213SospocRecords',
 '"EGGS shall be received clean and sound and may not exceed the RESTRICTED EGG tolerances for U.S. CONSUMER Grade B as specified in United States Standards, Grades and Weight Classes for Shell Eggs, AMS 56 200et seq., administered by the Agricultural Marketing Service of USDA. P"',
 3, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320214SospocRecords_B',
+'"(B) Fluid and dry milk and milk products shall: (1) Be obtained pasteurized; P and (2) Comply with GRADE A STANDARDS as specified in LAW. P"',
+3, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320214SospocRecords_C',
+'"(C) Frozen milk products, such as ice cream, shall be obtained pasteurized as specified in 21 CFR 135 - Frozen Desserts. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320214SospocRecords_D',
+'"(D) Cheese shall be obtained pasteurized unless alternative procedures to pasteurization are specified in the CFR, such as 21 CFR 133 - Cheeses and Related Cheese Products, for curing certain cheese varieties. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320215SospocRecords',
+'"FOOD packages shall be in good condition and protect the integrity of the contents so that the FOOD is not exposed to ADULTERATION or potential contaminants. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320216SospocRecords',
+'"Ice for use as a FOOD or a cooling medium shall be made from DRINKING WATER. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320217SospocRecords_A',
+'"(A) Raw SHUCKED SHELLFISH shall be obtained in nonreturnable packages which bear a legible label that identifies the: Pf (1) Name, address, and CERTIFICATION NUMBER of the shucker-packer or repacker of the MOLLUSCAN SHELLFISH; Pf and (2) The "sell by" or “best used by” date for packages with a capacity of less than 1.89 L (one-half gallon) or the date shucked for packages with a capacity of 1.89 L (one-half gallon) or more. Pf"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320217SospocRecords_B ',
+'"(B) A package of raw SHUCKED SHELLFISH that does not bear a label or which bears a label which does not contain all the information as specified under Paragraph (A) of this section shall be subject to a hold order, as allowed by LAW, or seizure and destruction in accordance with 21 CFR Subpart D - Specific Administrative Decisions Regarding Interstate Shipments, Section 1240.60(d). Molluscan shellfish."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320218SospocRecords_A',
+'"(A) SHELLSTOCK shall be obtained in containers bearing legible source identification tags or labels that are affixed by the harvester and each dealer that depurates, ships, or reships the SHELLSTOCK, as specified in the National Shellfish Sanitation Program Guide for the Control of Molluscan Shellfish, and that list: Pf (b) The date of harvesting, Pf (c) The same information as specified for a harvesters tag under
+Subparagraphs (A)(1)(b)-(d) of this section, Pf and (d) The following statement in bold, capitalized type: " THIS TAG IS ATTACHED UNTIL CONTAINER IS EMPTY AND THEREAFTER KEPT ON FILE FOR 90 DAYS.” Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320218SospocRecords_B',
+'"(B) A container of SHELLSTOCK that does not bear a tag or label or that bears a tag or label that does not contain all the information as specified under Subparagraph (A) of this section shall be subject to a hold order, as allowed by LAW, or seizure and destruction in accordance with 21 CFR Subpart D - Specific Administrative Decisions Regarding Interstate Shipments, Section 1240.60(d)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320218SospocRecords_C',
+'"(C) If a place is provided on the harvesters tag or label for a DEALER’s name, address, and CERTIFICATION NUMBER, the DEALER’S information shall be listed first."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320218SospocRecords_D',
+'"(D) If the harvesters tag or label is designed to accommodate each dealers identification as specified under Subparagraphs (A)(2)(a) and (b) of this section, individual dealer tags or labels need not be provided."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320219SospocRecords',
+'"When received by a RETAIL FOOD ESTABLISHMENT, SHELLSTOCK shall be reasonably free of mud, dead shellfish, and shellfish with broken shells. Dead shellfish or SHELLSTOCK with badly broken shells shall be discarded."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C3202110SospocRecords',
+'"Pre-PACKAGED JUICE shall:(A) Be obtained from a processor with a HACCP system as specified in 21 CFR Part 120; Hazard Analysis and Critical Control (HACCP) Systems; Pf and (B) Be obtained pasteurized or otherwise treated to attain a 5-log reduction of the most resistant microorganism of public health significance as specified in 21 CFR Part 120.24; or Process Controls. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320311SospocRecords_A',
+'"(A) Except as specified in (B) of this section, MOLLUSCAN SHELLFISH may not be removed from the lot in which they are received other than immediately before sale or preparation for service."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320311SospocRecords_B',
+'"(B) For display purposes, SHELLSTOCK may be removed from the lot in which they are received, displayed on drained ice, or held in a display lot, and a quantity specified by a CONSUMER may be removed from the display or display container and provided to the CONSUMER if:
+(1) The source of the SHELLSTOCK on display is identified as specified under 3-202.18 and recorded as specified under 3-203.12; and (2) The SHELLSTOCK are protected from contamination."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320311SospocRecords_C',
+'"(C) SHUCKED SHELLFISH may be removed from the lot in which they were received and held in a display container from which individual servings are dispensed upon a CONSUMERS request if:(1) The labeling information for the shellfish on display as specified under 3-202.17 is retained and correlated to the date when, or dates during which, the shellfish are sold or served; and (2) The shellfish are protected from contamination."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320312SospocRecords_A',
+'"(A) Except as specified under Subparagraph (C)(2) of this section, SHELLSTOCK tags shall remain attached to the lot in which the shellstock are received until the container is empty. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320312SospocRecords_B',
+'"(B) The date when the last SHELLSTOCK from the container is sold or served shall be recorded on the tag or label. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C320312SospocRecords_C',
+'"(C) The identity of the source of SHELLSTOCK that are sold or served shall be maintained by retaining SHELLSTOCK tags or labels for 90 calendar days from the date that is recorded on the tag or label, as specified under B of this section, by: Pf (1) Using an APPROVED record keeping system that keeps the tags or labels in chronological order correlated to the date that is recorded on the tag or label, as specified under B of this section; Pf and
+(2) If SHELLSTOCK are removed from their tagged or labeled container:(a) Preserving source identification by using a record keeping system as specified under Subparagraph (C)(1) of this section, Pf and(b) Ensuring that SHELLSTOCK from one tagged or labeled container are not commingled with SHELLSTOCK from another container with different CERTIFICATION NUMBERS; different harvest dates; or different growing areas as identified on the tag or label before being ordered by the consumer. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330111ProtectAfter_A',
+'"(A) FOOD EMPLOYEES shall wash their hands as specified under 2-301.12."',
+3, 1, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330111ProtectAfter_B',
+'"(B) Except when washing fruits and vegetables as specified under 3-302.15, or as specified in D of this section, FOOD EMPLOYEES may not contact exposed, READY- TO-EAT FOOD with their bare hands and shall use suitable UTENSILS such as deli tissue, spatulas, tongs, single-use gloves, or dispensing EQUIPMENT. P"',
+3, 1, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330111ProtectAfter_C',
+'"(C) FOOD EMPLOYEES shall minimize bare hand and arm contact with exposed FOOD that is not in a READY-TO-EAT form. Pf"',
+3, 1, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330111ProtectAfter_D',
+'"(D) FOOD EMPLOYEES not serving a HIGHLY SUSCEPTIBLE POPULATION may contact exposed, READY-TO-EAT FOOD with their bare hands if:(1) The PERMIT HOLDER obtains prior APPROVAL from the REGULATORY AUTHORITY; (2) Written procedures are maintained in the FOOD ESTABLISHMENT and made available to the REGULATORY AUTHORITY upon request that include: (a) For each bare hand contact procedure, a listing of the specific
+READY-TO-EAT FOODS that are touched by bare hands, (b) Diagrams and other information showing that handwashing facilities, installed, located, equipped, and maintained as specified under 5-203.11, 5-204.11, 5-205.11, 6-301.11, 6-301.12, and 6-301.14, are in an easily accessible location and in close proximity to the work station where the bare hand contact procedure is conducted;(3) A written EMPLOYEE health policy that details how the FOOD ESTABLISHMENT
+complies with §§ 2-201.11, 2-201.12, and 2-201.13 including: (a) Documentation that FOOD EMPLOYEES acknowledge that they are informed to report information about their health and activities as they relate to gastrointestinal symptoms and diseases that are transmittable through FOOD as specified under 2-201.11(A),(b) Documentation that FOOD EMPLOYEES acknowledge their responsibilities as specified under 2-201.11(E) and (F), and (c) Documentation that the PERSON IN CHARGE acknowledges the responsibilities as specified under 2-201.11(B), (C) and (D), and 2-
+201.12 and 2-201.13; (4) Documentation that FOOD EMPLOYEES acknowledge that they have received training in:(a) The RISKS of contacting the specific READY-TO-EAT FOODS with bare hands,
+(b) Proper handwashing as specified under 2-301.12,(c) When to wash their hands as specified under 2-301.14, (d) Where to wash their hands as specified under 2-301.15,
+(e) Proper fingernail maintenance as specified under 2-302.11, (f) Prohibition of jewelry as specified under 2-303.11, and (g) Good hygienic practices as specified under 2-401.11 and 2-401.12;
+(5) Documentation that hands are washed before FOOD preparation and as necessary to prevent cross contamination by FOOD EMPLOYEES as specified under 2-301.11, 2-301.12, 2-301.14, and 2-301.15 during all hours of operation when the specific READY-TO-EAT FOODS are prepared;\n" +
+(6) Documentation that FOOD EMPLOYEES contacting READY-TO-EAT FOOD with bare hands use two or more of the following control measures to provide additional safeguards to HAZARDS associated with bare hand contact:(a) Double handwashing,(b) Nail brushes,(c) A hand antiseptic after handwashing as specified under 2-301.16,(d) Incentive programs such as paid sick leave that assist or encourage FOOD EMPLOYEES not to work when they are ill, or
+(e) Other control measures APPROVED by the REGULATORY AUTHORITY; and(7) Documentation that corrective action is taken when Subparagraphs (D) (1) - (6) of this section are not followed."',
+3, 1, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330112ProtectAfter',
+'"A FOOD EMPLOYEE may not use a UTENSIL more than once to taste FOOD that is to be sold or served. P"',
+3, 1, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330112ProtectAfter',
+'"(A) FOOD shall be protected from cross contamination by:
+        (1) Separating raw animal FOODS during storage, preparation, holding, and display from:
+        (a) Raw READY-TO-EAT FOOD including other raw animal FOOD such as FISH for sushi or MOLLUSCAN SHELLFISH, or other raw READY-TO-EAT FOOD such as vegetables, P and
+         (b) Cooked READY-TO-EAT FOOD; P
+        (2) Except when combined as ingredients, separating types of raw animal FOODS from each other such as beef, FISH, lamb, pork, and POULTRY during storage, preparation, holding, and display by:
+        (a) Using separate EQUIPMENT for each type, P or
+         (b) Arranging each type of FOOD in EQUIPMENT so that cross of one type with another is prevented, P and
+        (c) Preparing each type of FOOD at different times or in separate areas; P
+        (3) Cleaning EQUIPMENT and UTENSILS as specified under 4-602.11(A) and
+       SANITIZING as specified under 4-703.11;
+        (4) Except as specified in 3-501.15(B)(2) an in (B) of this section, storing the
+         FOOD in packages, covered containers, or wrappings;
+        (5) Cleaning HERMETICALLY SEALED CONTAINERS of FOOD or visible soil before opening;
+       (6) Protecting FOOD containers that are received PACKAGED together in a case or overwrap from cuts when the case or overwrap is opened;
+       (7) Storing damaged, spoiled, or recalled FOOD being held in the RETAIL FOOD ESTABLISHMENT as specified under 6-404.11; and
+        (8) Separating fruits and vegetables, before they are washed as specified under 3-302.15 from READY-TO-EAT FOOD.";',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330211ProtectAfter_B',
+'"(B) Subparagraph (A)(4) of this section does not apply to:(1) Whole, uncut, raw fruits and vegetables and nuts in the shell, that require peeling or hulling before consumption;
+(2) PRIMAL CUTS, quarters, or sides of raw MEAT or slab bacon that are hung on clean, SANITIZED hooks or placed on clean, SANITIZED racks;(3) Whole, uncut, processed MEATS such as country hams, and smoked or cured sausages that are placed on clean, SANITIZED racks;
+(4) FOOD being cooled as specified under Subparagraph 3-501.15(B)(2); or(5) SHELLSTOCK."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330212ProtectAfter',
+'"Except for containers holding FOOD that can be readily and un-mistakenly recognized, such as dry pasta, working containers holding FOOD or FOOD ingredients that are removed from their original packages for use in the RETAIL FOOD ESTABLISHMENT, such as cooking oils, flour, herbs, potato flakes, salt, spices, and sugar shall be identified with the common name of the FOOD."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330213ProtectAfter',
+'"Pasteurized EGGS or EGG products shall be substituted for raw shell EGGS in the preparation of FOODS such as Caesar salad, hollandaise or Béarnaise sauce, mayonnaise, eggnog, ice cream, and EGG-fortified BEVERAGES that are not:(A) Cooked as specified under 3-401.11(A)(1) or (2); P or (B) Included in 3-401.11(D). P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330214ProtectAfter_A',
+'"(A) FOOD shall be protected from contamination that may result from the addition of, as specified in 3-202.12:(1) Unsafe or unAPPROVED FOOD or COLOR ADDITIVES; P and
+(2) Unsafe or unAPPROVED levels of APPROVED FOOD and COLOR ADDITIVES. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330214ProtectAfter_B',
+'"(B) A FOOD EMPLOYEE may not:(1) Apply sulfiting agents to fresh fruits and vegetables intended for raw consumption or to a FOOD considered to be a good source of vitamin B1; P or
+ (2) Except for grapes, serve or sell FOOD specified under (B)(1) of this section that is treated with sulfiting agents before receipt by the RETAIL FOOD ESTABLISHMENT. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330215ProtectAfter_A',
+'"(A) Except as specified in (B) of this section and except for whole, raw fruits and vegetables that are intended for washing by the CONSUMER before consumption, raw fruits and vegetables shall be thoroughly washed in water to remove soil and other contaminants before being cut, combined with other ingredients, cooked, served, or offered for human consumption in READY-TO-EAT form"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330215ProtectAfter_B',
+'"(B) Fruits and vegetables may be washed by using chemicals as specified under 7-204.12."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330215ProtectAfter_B',
+'"After use as a medium for cooling the exterior surfaces of FOOD such as melons or FISH, PACKAGED FOODS such as canned BEVERAGES, or cooling coils and tubes of EQUIPMENT, ice may not be used as FOOD. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('String C330312ProtectAfter_A',
+'"(A) PACKAGED FOOD may not be stored in direct contact with ice or water if the FOOD is subject to the entry of water because of the nature of its packaging, wrapping, or container or it’s positioning in the ice or water."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330312ProtectAfter_B',
+'"(B) Except as specified in (C) and (D) of this section, un-PACKAGED FOOD may not be stored in direct contact with un-drained ice."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES (' C330312ProtectAfter_C',
+'"(C) Whole, raw fruits or vegetables; cut, raw vegetables such as celery or carrot sticks or cut potatoes; and tofu may be immersed in ice or water."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330312ProtectAfter_D',
+'"(D) Raw chicken and raw FISH that are received immersed in ice in shipping containers may remain in that condition while in storage awaiting preparation, display, service, or sale."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330411ProtectAfter_A',
+'"FOOD shall only contact surfaces of:(A) EQUIPMENT and UTENSILS that are cleaned as specified under Part 4-6 of these RULES AND REGULATIONS and SANITIZED as specified under Part 4-7 of these Rules and Regulations; P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330411ProtectAfter_B',
+'"(B)FOOD shall only contact surfaces of  SINGLE-SERVICE and SINGLE-USE ARTICLES. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330412ProtectAfter_B',
+'"(B) In FOOD that is not POTENTIALLY HAZARDOUS with their handles above the top of the FOOD within containers or EQUIPMENT that can be closed, such as bins of sugar, flour, or cinnamon;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330412ProtectAfter_C',
+'"(C) On a clean portion of the FOOD preparation table or cooking EQUIPMENT only if the in-use UTENSIL and the FOOD-CONTACT surface of the FOOD preparation table or cooking EQUIPMENT are cleaned and SANITIZED at a frequency specified under 4- 602.11 and 4-702.11;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330412ProtectAfter_D',
+'"(D) In running water of sufficient velocity to flush particulates to the drain, if used with moist FOOD such as ice cream or mashed potatoes;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330412ProtectAfter_E',
+'"(E) In a clean, protected location if the UTENSILS, such as ice scoops, are used only with a FOOD that is not POTENTIALLY HAZARDOUS;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330412ProtectAfter_F',
+'"(F) In a container of water if the water is maintained at a temperature of at least 57 C(135 F) and the container is cleaned at a frequency specified under Subparagraph
+4-602.11(D)(7)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330413ProtectAfter',
+'"LINENS and napkins may not be used in contact with FOOD unless they are used to line a container for the service of FOODS and the LINENS and napkins are replaced each time the container is refilled for a new CONSUMER."',
+3, 2, 3);
 
 
 

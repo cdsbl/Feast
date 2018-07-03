@@ -48,6 +48,14 @@ public class RegulationController extends Controller
         return ok(views.html.regulationoutcount.render(regulations, null));
     }
 
+    @Transactional(readOnly = true)
+    public Result getFuture()
+    {
+        String sql = "SELECT r FROM Regulation r";
+        List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).getResultList();
+        return ok(views.html.future.render(regulations));
+    }
+
     public Result getRegulationControlPointCount()
     {
         DynamicForm form = formFactory.form().bindFromRequest();
@@ -111,6 +119,7 @@ public class RegulationController extends Controller
         return ok(views.html.regulationoutcount.render(regulations, regulationControlPointIds));
 
     }
+
 }
 
        /*@Transactional(readOnly = true)
@@ -128,7 +137,6 @@ public class RegulationController extends Controller
                 regulationControlPointIds.add(regulationControlPointId);
             }
         }
-
         String sql = "SELECT NEW RegulationControlTotal (r.regulationControlPointId, r.regulationControlPoints, COUNT(*)) " +
                 "FROM Regulation rt " +
                 "JOIN RegulationControlPoint r ON rt.regulationControlPointId = r.regulationControlPointId " +
@@ -141,8 +149,6 @@ public class RegulationController extends Controller
         return ok(views.html.regulationouttotal.render(regulationControlPointId));
 
     }*/
-
-
    /* @Transactional(readOnly = true)
     public Result getRegulationNumber()
     {
@@ -152,17 +158,12 @@ public class RegulationController extends Controller
     }
 }*/
 
-
 // DO NOT DELETE THIS!!
     /*String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds) GROUP BY r.regulationSpecific";
     List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
             setParameter("regulationIds", regulationIds).getResultList();*/
 
-
 // DO NOT DELETE THIS EITHER!
-
-//<p><input type ="checkbox" id="reg-@regulation.getRegulationId" name="reg-@regulation.getRegulationId"/>OUT</p>
-
 
 
  /* @Transactional(readOnly = true)
@@ -173,6 +174,3 @@ public class RegulationController extends Controller
         return ok(views.html.regulation.render(regulations));
     }*/
 
-/*<form method="GET" action="/regulationoutcount">
-@CSRF.formField*/
-// <input type = "hidden" name="reg-@regulationControlPointId.getRegulationControlPointId" value="reg-@regulationControlPointId.getRegulationControlPointId">
