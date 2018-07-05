@@ -103,6 +103,7 @@ public class RegulationController extends Controller
             }
         }
 
+        regulationIds.add(-1);
         String sql = "SELECT r FROM Regulation r WHERE r.regulationId IN (:regulationIds)";
         List<Regulation> regulations = jpaApi.em().createQuery(sql, Regulation.class).
                 setParameter("regulationIds", regulationIds).getResultList();

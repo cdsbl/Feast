@@ -1306,6 +1306,407 @@ VALUES ('C330413ProtectAfter',
 '"LINENS and napkins may not be used in contact with FOOD unless they are used to line a container for the service of FOODS and the LINENS and napkins are replaced each time the container is refilled for a new CONSUMER."',
 3, 2, 3);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_A',
+'"(A) Cloths that are in use for wiping FOOD spills from tableware and carry-out containers that occur as FOOD is being served shall be:
+  (1) Maintained dry; and
+  (2) Used for no other purpose."',
+3, 2, 3);
+
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_B',
+'"(B) Cloths in-use for wiping counters and other EQUIPMENT surfaces, shall be:
+  (1) Held between uses in a chemical sanitizer solution at a concentration specified under 4-501.114; and
+  (2) Laundered daily as specified under 4-802.11(D)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_C',
+'"(C) Cloths in use for wiping surfaces in contact with raw animal FOODS shall be kept separate from cloths used for other purposes."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_D',
+'"(D) Dry wiping cloths and the chemical sanitizing solutions specified in Subparagraph (B)(1) of this section in which wet wiping cloths are held between uses shall be free of FOOD debris and visible soil."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_E',
+'"(E) Containers of chemical sanitizing solutions specified in Subparagraph (B)(1) of this section in which wet wiping cloths are held between uses shall be stored off the floor and used in a manner that prevents contamination of FOOD, EQUIPMENT, UTENSILS, LINENS, SINGLE-SERVICE, or SINGLE-USE ARTICLES."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330414ProtectAfter_F',
+'"(F) SINGLE-USE disposable sanitizer wipes shall be used in accordance with EPA- approved manufacturers label use instructions."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330415ProtectAfter_A',
+'"(A) If used, SINGLE-USE gloves shall be used for only one task such as working with READY-TO-EAT FOOD or with raw animal FOOD, used for no other purpose, and discarded when damaged or soiled, or when interruptions occur in the operation. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330415ProtectAfter_B',
+'"(B) Except as specified in (C) of this section, slash-resistant gloves that are used to protect the hands during operations requiring cutting shall be used in direct contact only with FOOD that is subsequently cooked as specified under Part 3-4 such as frozen FOOD or a PRIMAL CUT of MEAT."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330415ProtectAfter_C',
+'"(C) Slash-resistant gloves may be used with READY-TO-EAT FOOD that will not be subsequently cooked if the slash-resistant gloves have a SMOOTH, durable, and nonabsorbent outer surface; or if the slash-resistant gloves are covered with a SMOOTH, durable, nonabsorbent glove, or a SINGLE-USE glove."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330415ProtectAfter_D',
+'"(D) Cloth gloves may not be used in direct contact with FOOD unless the FOOD is subsequently cooked as required under Part 3-4 such as frozen FOOD or a PRIMAL CUT of MEAT."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330416ProtectAfter_A',
+'"(A) Except for refilling a CONSUMER’S drinking cup or container without contact between the pouring UTENSIL and the lip-contact area of the drinking cup or container, FOOD EMPLOYEES may not use TABLEWARE, including SINGLE-SERVICE ARTICLES, soiled by the CONSUMER, to provide second portions or refills."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330416ProtectAfter_B',
+'"(B) Except as specified in (C) of this section, self-service CONSUMERS may not be allowed to use soiled TABLEWARE, including SINGLE-SERVICE ARTICLES, to obtain additional FOOD from the display and serving EQUIPMENT."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330416ProtectAfter_C',
+'"(C) Drinking cups and containers may be reused by self-service CONSUMERS if refilling is a contamination-free process as specified under 4-204.13(A), (B), and (D)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330417ProtectAfter_A',
+'"(A) A take-home FOOD container returned to a RETAIL FOOD ESTABLISHMENT may not be refilled at a FOOD ESTABLISHMENT with a POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330417ProtectAfter_B',
+'"(B) Except as specified in (C), a take-home FOOD container refilled with FOOD that is not POTENTIALLY HAZARDOUS shall be cleaned as specified under 4-603.17(B)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330417ProtectAfter_C',
+'"(C) Personal take-out BEVERAGE containers, such as thermally insulated bottles, nonspill coffee cups, and promotional BEVERAGE glasses, may be refilled by EMPLOYEES or the CONSUMER if refilling is a contamination-free process as specified under 4-204.13(A), (B), and (D)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330511ProtectAfter_A',
+'"(A) Except as specified in (B) and (C) of this section, FOOD shall be protected from contamination by storing the FOOD:
+(1) In a clean, dry location;
+(2) Where it is not exposed to splash, dust, or other contamination; and
+(3) At least 15 cm (6 inches) above the floor."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330511ProtectAfter_B',
+'"(B) FOOD in packages and working containers may be stored less than15 cm (6 inches) above the floor on case lot handling EQUIPMENT as specified under 4-204.122."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330511ProtectAfter_C',
+'"(C) Pressurized BEVERAGE containers, cased FOOD in waterproof containers such as bottles or cans, and milk containers in plastic crates may be stored on a floor that is clean and not exposed to floor moisture."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__A',
+'"FOOD may not be stored: (A) In locker rooms;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__B',
+'"Food may not be stored: (B) In toilet rooms;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__C',
+'"Food may not be stored: (C) In dressing rooms;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__D',
+'"Food may not be stored: (D) In garbage rooms;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__E',
+'"Food may not be stored: (E) In mechanical rooms;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__F',
+'"Food may not be stored: (F) Under sewer lines that are not shielded to intercept potential drips;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__G',
+'"Food may not be stored: (G) Under leaking water lines, including leaking automatic fire sprinkler heads, or under lines on which water has condensed;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__H',
+'"Food may not be stored: (H) Under open stairwells; or"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330512ProtectAfter__I',
+'"Food may not be stored: (I) Under other sources of contamination."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330513ProtectAfter',
+'"POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) dispensed through a VENDING MACHINE shall be in the package in which it was placed at the RETAIL FOOD ESTABLISHMENT or FOOD PROCESSING PLANT at which it was prepared."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330514ProtectAfter',
+'"During preparation, UNPACKAGED FOOD shall be protected from environmental sources of contamination."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330611ProtectAfter',
+'"Except for nuts in the shell and whole, raw fruits and vegetables that are intended for hulling, peeling, or washing by the CONSUMER before consumption, FOOD on display shall be protected from contamination by the use of packaging; counter, service line, or salad bar FOOD guards; display cases; or other effective means. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330612ProtectAfter_A',
+'"(A) Condiments shall be protected from contamination by being kept in dispensers that are designed to provide protection, protected FOOD displays provided with the proper UTENSILS, original containers designed for dispensing, or individual packages or portions."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330612ProtectAfter_B',
+'"(B) Condiments at a VENDING MACHINE LOCATION shall be in individual packages or provided in dispensers that are filled at an APPROVED location, such as the RETAIL FOOD ESTABLISHMENT that provides FOOD to the VENDING MACHINE LOCATION, a FOOD PROCESSING PLANT that is regulated by the agency that has jurisdiction over the operation, or a properly equipped facility that is located on the site of the VENDING MACHINE LOCATION."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330613ProtectAfter_A',
+'"(A) Raw, UNPACKAGED animal FOOD, such as beef, lamb, pork, POULTRY, and FISH may not be offered for CONSUMER self-service. P This paragraph does not apply to:
+ (1) CONSUMER self-service of READY-TO-EAT FOODS at buffets or salad bars that serve FOODS such as sushi or raw shellfish;
+(2) Ready-to-cook individual portions for immediate cooking and consumption on the PREMISES such as CONSUMER-cooked MEATS or CONSUMER-selected ingredients for Mongolian barbecue; or
+(3) Raw, frozen, shell-on shrimp or lobster."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330613ProtectAfter_B',
+'"(B) CONSUMER self-service operations for READY-TO-EAT FOODS shall be provided with suitable UTENSILS or effective dispensing methods that protect the FOOD from contamination. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330613ProtectAfter_C',
+'"(C) CONSUMER self-service operations such as buffets and salad bars shall be monitored by FOOD EMPLOYEES trained in safe operating procedures. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330614ProtectAfter_A',
+'"(A) Except as specified in (B) of this section, after being served or sold and in the possession of a CONSUMER, FOOD that is unused or returned by the CONSUMER may not be offered as FOOD for human consumption. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330614ProtectAfter_B',
+'"(B) Except as specified under Subparagraph 3-801.11(G), a container of FOOD that is not POTENTIALLY HAZARDOUS (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) may be RE-SERVED from one CONSUMER to another if:
+(1) The FOOD is dispensed so that it is protected from contamination and the container is closed between uses, such as a narrow-neck bottle containing catsup, steak sauce, or wine; or
+ (2) The FOOD, such as crackers, salt, or pepper, is in an unopened original
+ PACKAGE and is maintained in sound condition."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C330711ProtectAfter',
+'"FOOD shall be protected from contamination that may result from a factor or source not specified under 3-301 - 3-306.
+  In the event of a fire, flood, power outage, or similar event that might result in the contamination of food that might prevent potentially hazardous food from being held at required temperatures, the person in charge shall contact the REGULATORY
+Authority prior to re-opening. Upon receiving notice of this occurrence, the REGULATORY Authority shall take whatever action it deems necessary to protect the public health."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340111DestructOrg_A',
+'"(A) Except as specified under Subparagraph (B) and in Subparagraphs (C) and (D) of this section, raw animal FOODS such as EGGS, FISH, MEAT, POULTRY, and FOODS containing these raw animal FOODS, shall be cooked to heat all parts of the FOOD
+to a temperature and for a time that complies with one of the following methods based on the FOOD that is being cooked:
+(1) 63°C (145°F) or above for 15 seconds for: P
+(a) Raw EGGS that are broken and prepared in response to a
+CONSUMERS order and for immediate service, P and
+(b) Except as specified under Subparagraphs (A)(2) and (3) and Subparagraph (B) of this section, FISH, MEAT, including GAME ANIMALS commercially raised for FOOD as specified under Subparagraph 3-
+201.17(A)(1) and GAME ANIMALS under a voluntary inspection program as specified under Subparagraph 3-201.17(A)(2); P
+(2) 68°C (155°F) for 15 seconds or the temperature specified in the following chart that corresponds to the holding time for ratites and INJECTED MEATS; the following if they are COMMINUTED: FISH, MEAT, GAME ANIMALS commercially raised for FOOD as specified under Subparagraph 3-
+201.17(A)(1), and GAME ANIMALS under a voluntary inspection program as specified under Subparagraph 3-201.17(A)(2); and raw EGGS that are not prepared as specified under Subparagraph (A)(1)(a) of this section: P
+Minimum Temperature ºC (ºF) Time
+63 (145)
+3 minutes
+66 (150)
+1 minute
+70 (158)
+< 1 second (instantaneous)
+;or
+(3) 74°C (165°F) or above for 15 seconds for POULTRY, wild GAME ANIMALS as specified under Subparagraphs 3-201.17(A)(3) and (4), stuffed FISH, stuffed MEAT, stuffed pasta, stuffed POULTRY, stuffed ratites, or stuffing containing FISH, MEAT, POULTRY, or ratites. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340111DestructOrg_B',
+'"(B) Whole beef roasts, corned beef roasts, pork roasts, and cured pork roasts such as ham, shall be cooked:\n" +
+            (1) In an oven that is preheated to the temperature specified for the roasts weight in the following chart and that is held at that temperature: Pf\n" +
+            Oven Type Oven Temperature Based on Roast Weight\n" +
+            Less than 4.5 kg (10 lbs)\n" +
+            4.5 kg (10 lbs) or More\n" +
+            Still Dry\n" +
+            177°C (350°F) or more\n" +
+            121°C (250°F) or more\n" +
+            Convection\n" +
+            163°C (325°F) or more\n" +
+            121°C (250°F) or more\n" +
+            High Humidity1\n" +
+            121°C (250°F) or less\n" +
+            121°C (250°F) or less\n" +
+            1 Relative humidity greater than 90% for at least 1 hour as measured in the cooking chamber or exit of the oven; or in a moisture-impermeable bag that provides 100% humidity." +
+            ;and\n" +
+            (2) As specified in the following chart, to heat all parts of the FOOD to a temperature and for the holding time that corresponds to that temperature: P
+            Temperature °C (°F) Time1 in Minutes Temperature °C (°F) Time1 in Seconds
+            54.4 (130)
+            112
+            63.9 (147)
+            134
+            55.0 (131)
+            89
+            65.0 (149)
+            85
+            56.1 (133)
+            56
+            66.1 (151)
+            54
+            57.2 (135)
+            36
+            67.2 (153)
+            34
+            57.8 (136)
+            28
+            68.3 (155)
+            22
+            58.9 (138)
+            18
+            69.4 (157)
+            14
+            60.0 (140)
+            12
+            70.0 (158)
+            0
+            61.1 (142)
+            8
+            62.2 (144)
+            5
+            62.8 (145)
+            4
+            1Holding time may include post oven heat rise."',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340111DestructOrg_C',
+'"(C) A raw or undercooked WHOLE-MUSCLE, INTACT BEEF steak may be served or offered for sale in a READY-TO-EAT form if:
+            (1) The RETAIL FOOD ESTABLISHMENT serves a population that is not a HIGHLY SUSCEPTIBLE POPULATION,
+            (2) The steak is labeled to indicate that it meets the definition of WHOLE-
+            MUSCLE, INTACT BEEF as specified under Subparagraph 3-201.11(E), and
+            (3) The steak is cooked on both the top and bottom to a surface temperature of 63°C (145°F) or above and a cooked color change is achieved on all external surfaces."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340111DestructOrg_D',
+'"(D) A raw animal FOOD such as raw EGG, raw FISH, raw-marinated FISH, raw MOLLUSCAN SHELLFISH, or steak tartare; or a partially cooked FOOD such as lightly cooked FISH, soft cooked EGGS, or rare MEAT other than WHOLE-MUSCLE, INTACT BEEF steaks as specified in Subparagraph (C) of this section, may be served or offered for sale in a READY-TO-EAT form if:
+            (1) As specified under 3-801.11(C)(1) and (2), the Retail FOOD ESTABLISHMENT
+            serves a population that is not a HIGHLY SUSCEPTIBLE POPULATION, and
+            (2) The FOOD, if served or offered for service by CONSUMER selection from a childrens menu, does not contain COMMINUTED MEAT; Pf and
+            (3) The CONSUMER is informed as specified under 3-603.11 that to ensure its safety, the FOOD should be cooked as specified under (A) or (B) of this section; or
+            (4) The REGULATORY AUTHORITY grants a VARIANCE from (A) or (B) of this section as specified in 8-103.10 based on a HACCP PLAN that:
+            (a) Is submitted by the PERMIT HOLDER and APPROVED as specified under
+            Subpart 8-103.11,
+            (b) Documents scientific data or other information showing that a lesser time and temperature regimen results in a safe FOOD, and
+            (c) Verifies that EQUIPMENT and procedures for FOOD preparation and training of FOOD EMPLOYEES at the RETAIL FOOD ESTABLISHMENT meet the conditions of the VARIANCE."',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340112DestructOrg_A',
+'"Raw animal FOODS cooked in a microwave oven shall be:
+            (A) Rotated or stirred throughout or midway during cooking to compensate for uneven distribution of heat;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340112DestructOrg_B',
+'"(B) Covered to retain surface moisture;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340112DestructOrg_C',
+'"(C) Heated to a temperature of at least 74°C (165°F) in all parts of the food; and"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340112DestructOrg_E',
+'"(D) Allowed to stand covered for 2 minutes after cooking to obtain temperature equilibrium."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340113DestructOrg',
+'"Fruits and vegetables that are cooked for hot holding shall be cooked to a temperature of
+            57°C (135°F). Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_A',
+'"Raw animal FOODS that are cooked using a NON-CONTINUOUS COOKING process shall be: (A) Subject to an initial heating process that is no longer than sixty minutes in
+            duration; P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_B',
+'"(B) Immediately after initial heating, cooled according to the time and temperature parameters specified for cooked POTENTIALLY HAZARDOUS FOOD (TIME
+            /TEMPERATURE CONTROL FOR SAFETY FOOD) under 3-501.14(A); P"',
+3, 2, 2);
+
+
 
 
 

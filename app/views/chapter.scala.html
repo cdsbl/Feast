@@ -12,24 +12,24 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-lg-11"></div>
-        <div class="col-lg-1"><a class="btn btn-primary btn-sm" href="regulation" role="button">SEARCH</a></div>
+        <div class="col-lg-9"></div>
+        <div class="col-lg-3"><a class="btn-link" href="future" role="button">What is next for this prototype?</a></div>
     </div>
 </div>
     <div class="container">
-        <h1 class="display-4"><strong>F.E.A.S.T.</strong><img src="assets/images/ArkansasPlain.png" alt="Arkansas" title="Arkansas" style="float:left;width:10px;height:10px;"/><img src="assets/images/Fork.jpg" alt="Fork" title="Fork" style="float:left;width:10px;height:10px;"/></h1>
-       <h2><i>food establishment of Arkansas search tool</i></h2>
+        <h1 class="display-4"><strong>F.E.A.S.T.</strong><img src="assets/images/ArkansasPlain.png" alt="Arkansas" title="Arkansas" style="float:left;width:10px;height:10px;"/><img src="assets/images/Fork.jpg" alt="Fork" title="Fork" style="float:left;width:10px;height:10px;"/><a class="btn btn-success btn-lg" href="regulation" role="button">BEGIN SEARCH</a></h1>
+        <h2><i>food establishment of Arkansas search tool</i></h2>
    <h3>Observe, Select, and Review Out of Compliance Regulation Specifics</h3>
 </div>
 
    <div class="container">
-    <table class="table table-condensed">
+    <table class="table table-condensed table-bordered table-active">
     @for(chapter <- chapters){
-<tr>
-    <td>
+<tr class="active">
+    <td class="active">
         Chapter @chapter.getChapterNumber()
     </td>
-    <td>
+    <td class="active">
         @chapter.getChapterName()
     </td>
 </tr>
