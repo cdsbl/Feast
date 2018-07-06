@@ -1706,6 +1706,756 @@ VALUES ('C340114DestructOrg_B',
             /TEMPERATURE CONTROL FOR SAFETY FOOD) under 3-501.14(A); P"',
 3, 2, 2);
 
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_C',
+'"(C) After cooling, held frozen or cold, as specified for POTENTIALLY HAZARDOUS FOOD
+            (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) under 3-501.16(A)(2); P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_D',
+'"(D) Prior to sale or service, cooked using a process that heats all parts of the FOOD to a temperature of at least 74°C (165°F) for 15 seconds; P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_E',
+'"(E) Cooled according to the time and temperature parameters specified for cooked POTENTIALLY HAZARDOUS FOOD (TIME /TEMPERATURE CONTROL FOR SAFETY FOOD) under 3-501.14(A) if not either hot held as specified under 3-501.16(A), served immediately, or held using time as a public health control as specified under 3-\n" +
+            "501.19 after complete cooking; P and"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340114DestructOrg_F',
+'"(F) Prepared and stored according to written procedures that:\n" +
+            "(1) Have obtained prior APPROVAL from the REGULATORY AUTHORITY; Pf\n" +
+            "(2) Are maintained in the FOOD ESTABLISHMENT and are available to the\n" +
+            "REGULATORY AUTHORITY upon request; Pf\n" +
+            "(3) Describe how the requirements specified under (A)-(E) of this Section are to be monitored and documented by the PERMIT HOLDER and the corrective actions to be taken if the requirements are not met; Pf\n" +
+            "(4) Describe how the FOODS, after initial heating, but prior to complete cooking, are to be marked or otherwise identified as FOODS that must be cooked as specified under (D) of this section prior to being offered for sale or service; Pf and\n" +
+            "(5) Describe how the FOODS, after initial heating but prior to cooking as specified under (D) of this section, are to be separated from READY-TO-EAT FOODS as specified under 3-302.11 (D). Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340211DestructOrg_A',
+'"(A) Except as specified in Subparagraph (B) of this section, before service or sale in READY-TO-EAT form, raw, raw-marinated, partially cooked, or marinated-partially cooked FISH other than MOLLUSCAN SHELLFISH shall be: P
+            (1) Frozen and stored at a temperature of -20°C (-4°F) or below for 168 hours
+            (7 days) in a freezer; P
+            (2) Frozen at -35°C (-31°F) or below until solid and stored at -35°C (-31°F) or below for a minimum of 15 hours; P or
+            (3) Frozen at -35°C (-31°F) or below until solid and stored at -20°C (-4°F) or below for a minimum of 24 hours. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340211DestructOrg_B',
+'"(B) Paragraph (A) of this section does not apply to: (1) MOLLUSCAN SHELLFISH;
+            (2) Tuna of the species Thunnus alalunga, Thunnus albacares (Yellowfin tuna), Thunnus atlanticus, Thunnus maccoyii (Bluefin tuna, Southern), Thunnus obesus (Bigeye tuna), or Thunnus thynnus (Bluefin tuna, Northern); or
+            (3) Aquacultured FISH, such as salmon, that:
+            (a) If raised in open water, are raised in net-pens, or
+            (b) Are raised in land-based operations such as ponds or tanks, and
+            (c) Are fed formulated feed, such as pellets, that contains no live parasites infective to the aquacultured FISH.
+            (4) FISH eggs that have been removed from the skein and rinsed."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340212DestructOrg_A',
+'"(A) Except as specified in 3-402.11(B) and (B) of this section, if raw, raw-marinated, partially cooked, or marinated-partially cooked FISH are served or sold in READY-
+            TO-EAT form, the PERSON IN CHARGE shall record the freezing temperature and time to which the FISH are subjected and shall retain the records of the FOOD ESTABLISHMENT for 90 calendar days beyond the time of service or sale of the
+            FISH. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340212DestructOrg_B',
+'"(B) If the FISH are frozen by a supplier, a written agreement or statement from the supplier stipulating that the FISH supplied are frozen to a temperature and for a time specified under 3-402.11 may substitute for the records specified under (A) of this section."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340212DestructOrg_C',
+'"(C) If raw, raw-marinated, partially cooked, or marinated-partially cooked FISH are served or sold in READY-TO-EAT form, and the FISH are raised and fed as specified in 3-402.11(B)(3), a written agreement or statement from the supplier or aquaculturist stipulating that the FISH were raised and fed as specified in 3-\n" +
+            402.11(B)(3) shall be obtained by the PERSON IN CHARGE and retained in the records of the FOOD ESTABLISHMENT for 90 calendar days beyond the time of service or sale of the FISH. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340310DestructOrg',
+'"Cooked and refrigerated FOOD that is prepared for immediate service in response to an individual CONSUMER order, such as a roast beef sandwich au jus, may be served at any temperature."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340311DestructOrg_A',
+'"(A) Except as specified under Subparagraphs (B) and (C) and in Subparagraph (E) of this section, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) that is cooked, cooled, and reheated for hot holding shall be reheated so
+            that all parts of the FOOD reach a temperature of at least 74 C (165 F) for 15
+            seconds. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340311DestructOrg_B',
+'"(B) Except as specified under Subparagraph (C) of this section, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) reheated in a microwave oven for hot holding shall be reheated so that all parts of the FOOD
+           reach a temperature of at least 74 C (165 F) and the FOOD is rotated or stirred,
+            covered, and allowed to stand covered for 2 minutes after reheating. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340311DestructOrg_C',
+'"(C) READY-TO-EAT FOOD taken from a commercially processed, HERMETICALLY SEALED CONTAINER, or from an intact package from a FOOD PROCESSING PLANT that is inspected by the FOOD REGULATORY AUTHORITY that has jurisdiction over the plant,
+                     shall be heated to a temperature of at least 57 C (135 F) for hot holding. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340311DestructOrg_D',
+'"(D) Reheating for hot holding shall be done rapidly and the time the FOOD is between
+                   the temperature specified under Subparagraph 3-501.16(A)(2) and 74 C (165 F)
+            may not exceed 2 hours. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340311DestructOrg_E',
+'"(E) Remaining unsliced portions of meat roasts that are cooked as specified under Subparagraph 3-401.11(B) may be reheated for hot holding using the oven parameters and minimum time and temperature conditions specified under Subparagraph 3-401.11(B)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340411DestructOrg_A',
+'"JUICE PACKAGED in a RETAIL FOOD ESTABLISHMENT shall be:
+            (A) Treated under a HACCP PLAN as specified in Subparagraph 8-201.12(B) – (E) to attain a 5-log reduction, which is equal to a 99.999% reduction, of the most resistant microorganism of public health significance; P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C340411DestructOrg_B',
+'"(B) Labeled, if not treated to yield a 5-log reduction of the most resistant microorganism of public health significance: Pf
+            (1) As specified under Subpart 3-602.11, Pf and
+            (2) As specified in 21 CFR 101.17(g) Food labeling, warning, notice, and safe handling statements, JUICES that have not been specifically processed to prevent, reduce, or eliminate the presence of pathogens with the following, \"WARNING: This product has not been pasteurized and, therefore, may contain harmful bacteria that can cause serious illness in children, the elderly, and persons with weakened immune systems."',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350111LimitGrowth',
+'"Stored frozen FOODS shall be maintained frozen."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350112LimitGrowth_A',
+'"Frozen POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) that is slacked to moderate the temperature shall be held:
+            (A) Under refrigeration that maintains the FOOD temperature at 5°C (41°F) or less, or at 5°C (41°F) or less;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350112LimitGrowth_B',
+'"(B) At any temperature if the FOOD remains frozen."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350113LimitGrowth_A',
+'"Except as specified in Subparagraph (D) of this section, POTENTIALLY HAZARDOUS FOOD
+            (Time/Temperature Control for Safety Food) shall be thawed:
+            (A) Under refrigeration that maintains the FOOD temperature at 5°C (41°F) or less, or at 5°C (41°F) or less as specified under 3-501.16(A)(2);"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350113LimitGrowth_B',
+'"(B) Completely submerged under running water:
+            (1) At a water temperature of 21°C (70°F) or below,
+            (2) With sufficient water velocity to agitate and float off loose particles in an overflow, and
+            (3) For a period of time that does not allow thawed portions of READY-TO-EAT FOOD to rise above 5°C (41°F), or
+            (4) For a period of time that does not allow thawed portions of a raw animal
+            FOOD requiring cooking as specified under 3-401.11(A) or (B) to be above
+            5°C (41°F), for more than 4 hours including:
+            (a) The time the FOOD is exposed to the running water and the time needed for preparation for cooking, or
+            (b) The time it takes under refrigeration to lower the FOOD temperature to 5°C (41°F)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350113LimitGrowth_C',
+'"(C) As part of a cooking process if the FOOD that is frozen is:
+            (1) Cooked as specified under Subparagraphs 3-401.11(A) or (B) or Subpart
+            3-401.12, or
+            (2) Thawed in a microwave oven and immediately transferred to conventional cooking EQUIPMENT, with no interruption in the process;"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350113LimitGrowth_D',
+'"(D) Using any procedure if a portion of frozen READY-TO-EAT FOOD is thawed and prepared for immediate service in response to an individual CONSUMERS order."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350114LimitGrowth_A',
+'"(A) Cooked POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety\
+            Food) shall be cooled:
+            (1) Within 2 hours from 57°C (135°F) to 21°C (70°F); P and
+            (2) Within 6 hours from 57°C (135°F) to 5°C (41°F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350114LimitGrowth_B',
+'"(B) POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) shall be cooled within 4 hours to 5°C (41°F) or less, if prepared from ingredients at ambient temperature, such as reconstituted FOODS and canned tuna. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350114LimitGrowth_C',
+'"(C) Except as specified in Subparagraph (D) of this section, a POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) received in compliance with LAWS allowing a temperature above 5°C (41°F) during shipment
+          from the supplier as specified in 3202.11(B), shall be cooled within 4 hours to 5 C\n" +
+            (41 F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350114LimitGrowth_D',
+'"(D) Raw EGGS shall be received as specified under Subparagraph 3-202.11(C) and immediately placed in refrigerated equipment that maintains an ambient air temperature of 7°C (45°F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES (' C350115LimitGrowth_A',
+' "(A) Cooling shall be accomplished in accordance with the time and temperature criteria specified under Subpart 3-501.14 by using one or more of the following methods based on the type of FOOD being cooled:
+            (1) Placing the FOOD in shallow pans;
+            (2) Separating the FOOD into smaller or thinner portions;
+            (3) Using rapid cooling EQUIPMENT;
+            (4) Stirring the FOOD in a container placed in an ice water bath;
+            (5) Using containers that facilitate heat transfer;
+            (6) Adding ice as an ingredient; Pf or
+            (7) Other effective methods. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350115LimitGrowth_B',
+' "(B) When placed in cooling or cold holding EQUIPMENT, FOOD containers in which
+            FOOD is being cooled shall be:
+            (1) Arranged in the EQUIPMENT to provide maximum heat transfer through the container walls; and
+            (2) Loosely covered, or uncovered if protected from overhead contamination
+            as specified under Subparagraph 3-305.11(A)(2), during the cooling period to facilitate heat transfer from the surface of the FOOD"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350116LimitGrowth_A',
+'"(A) Except during preparation, cooking, or cooling, or when time is used as the public health control as specified in Subpart 3-501.19, and except as specified in Subparagraph (B) of this section, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) shall be maintained:
+            (1) At 57°C (135°F) or above, except that roasts cooked to a temperature and for a time specified in Subparagraph 3-401.11(B) or reheated as specified
+                        in Subparagraph 3-403.11(E) may be held at a temperature of 54 C (130 F)
+            or above; P or
+            (2) At 5°C (41°F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350116LimitGrowth_B',
+'"(B) EGGS that have not been treated to destroy all viable Salmonellae spp. shall be stored in refrigerated EQUIPMENT that maintains an ambient air temperature of 7°C (45°F) or less. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_A',
+'"(A) Except when PACKAGING FOOD using a REDUCED OXYGEN PACKAGING method as specified under paragraph 3-502.12, and except as specified in (D) and (E) of this section, refrigerated, READY-TO-EAT, POTENTIALLY HAZARDOUS FOOD (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) prepared and held in a FOOD ESTABLISHMENT for more than 24 hours shall be clearly marked to indicate the date or day by which the FOOD shall be consumed on the PREMISES, sold, or discarded when held at a temperature of 5ºC (41ºF) or less for a maximum of 7 days. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_B',
+'"(B) Except as specified in Paragraphs (D) and (E) of this section, refrigerated, READY- TO-EAT, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety
+            Food) prepared and PACKAGED by a FOOD PROCESSING PLANT shall be clearly marked, at the time the original container is opened in a FOOD ESTABLISHMENT and if the FOOD is held for more than 24 hours, to indicate the date or day by which
+            the FOOD shall be consumed on the PREMISES, sold, or discarded, based on the temperature specified in (A) of this section; and: Pf
+            (1) The day the original container is opened in the RETAIL FOOD ESTABLISHMENT
+            shall be counted as Day 1; Pf and
+            (2) The day or date marked by the RETAIL FOOD ESTABLISHMENT may not exceed a manufacturer’s use-by date if the manufacturer determined the use-by date based on FOOD safety. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_C',
+'"(C) A refrigerated, READY-TO-EAT POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food ingredient or a portion of a refrigerated, READY-TO-EAT, POTENTIALLY HAZARDOUS FOOD (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) that is subsequently combined with additional ingredients or portions of FOOD shall retain the date marking of the earliest-prepared or first-prepared ingredient. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_D',
+'"(D) A date marking system that meets the criteria stated in (A) and (B) of this section may include:\n" +
+            (1) Using a method APPROVED by the REGULATORY AUTHORITY for refrigerated, READY-TO-EAT POTENTIALLY HAZARDOUS FOOD (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) that is frequently rewrapped, such as lunchmeat or a roast, or for which date marking is impractical, such as soft serve mix or milk in a dispensing machine;
+            (2) Marking the date or day of preparation, with a procedure to discard the FOOD on or before the last date or day by which the FOOD must be consumed on the premises, sold, or discarded as specified under (A) of this section;
+            (3) Marking the date or day the original container is opened in a FOOD ESTABLISHMENT, with a procedure to discard the FOOD on or before the last date or day by which the FOOD must be consumed on the premises, sold, or discarded as specified under (B) of this section; or
+            (4) Using calendar dates, days of the week, color-coded marks, or other effective marking methods, provided that the marking system is disclosed to the REGULATORY AUTHORITY upon request."',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_E',
+'"(E) Paragraphs (A) and (B) of this section do not apply to individual meal portions served or rePACKAGED for sale from a bulk container upon a consumers request."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350117LimitGrowth_F',
+'"(F) Paragraph (B) of this section does not apply to the following FOODS prepared and
+            PACKAGED by a FOOD PROCESSING PLANT inspected by a REGULATORY AUTHORITY:
+            (1) Deli salads, such as ham salad, seafood salad, chicken salad, egg salad, pasta salad, potato salad, and macaroni salad, manufactured in accordance with 21 CFR 110 Current good manufacturing practice in manufacturing, packing, or holding human food;
+            (2) Hard cheeses containing not more than 39% moisture as defined in 21
+            CFR 133 Cheeses and related cheese products, such as cheddar, gruyere, parmesan and reggiano, and romano;
+            (3) Semi-soft cheeses containing more than 39% moisture, but not more than
+            50% moisture, as defined in 21 CFR 133 Cheeses and related cheese products, such as blue, edam, gorgonzola, gouda, and monterey jack;
+            (4) Cultured dairy products as defined in 21 CFR 131 Milk and cream, such as yogurt, sour cream, and buttermilk;
+            (5) Preserved FISH products, such as pickled herring and dried or salted cod, and other acidified FISH products defined in 21 CFR 114 Acidified foods;
+            (6) Shelf stable, dry fermented sausages, such as pepperoni and Genoa salami that are not labeled \"Keep Refrigerated\" as specified in 9 CFR 317
+            Labeling, marking devices, and containers, and which retain the original
+            CASING on the product; and
+            (7) Shelf stable salt-cured products such as prosciutto and Parma (ham) that are not labeled \"Keep Refrigerated\" as specified in 9 CFR 317 Labeling, marking devices, and containers."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350118LimitGrowth_A',
+'"(A) A FOOD specified in Subparagraphs 3-501.17(A) or (B) shall be discarded if it: (1) Exceeds either of the temperature and time combinations specified in
+            Subparagraph 3-501.17(A), except time that the product is frozen; P
+            (2) Is in a container or PACKAGE that does not bear a date or day; P or
+            (3) Is appropriately marked with a date or day that exceeds a temperature and time combination as specified in Subparagraph 3-501.17(A). P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350118LimitGrowth_B',
+'"(B) Refrigerated, READY-TO-EAT, POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) prepared in a FOOD ESTABLISHMENT and dispensed through a VENDING MACHINE with an automatic shutoff control shall be discarded if it exceeds a temperature and time combination as specified in Subparagraph 3-
+            501.17(A). P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350119LimitGrowth_A',
+'"(A) Except as specified under Paragraph (B) of this section, if time without temperature control, is used as the public health control for a working supply of POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) before cooking, or for READY-TO-EAT POTENTIALLY HAZARDOUS FOOD (Time/Temperature Control for Safety Food) that is displayed or held for sale or service:
+            (1) Written procedures shall be prepared in advance, maintained in the FOOD ESTABLISHMENT and made available to the REGULATORY AUTHORITY upon request that specify: Pf
+            (a) Methods of compliance with Subparagraphs (B)(1) -(3) or C)(1)-(5) of this section; Pf and
+            (b) Methods of compliance with 3-501.14 for FOOD that is prepared, cooked, and refrigerated before time is used as a public health control. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350119LimitGrowth_B',
+'"(B) If time temperature control is used as the public health control up to a maximum of 4 hours:
+            TIME- maximum up to 4 hours
+           (1) The FOOD shall have an initial temperature of 5ºC (41ºF) or less when removed from cold holding temperature control, or 57°C (135°F) or greater when removed from hot holding temperature control; P
+            (2) The FOOD shall be marked or otherwise identified to indicate the time that is
+            4 hours past the point in time when the FOOD is removed from temperature control; Pf
+            (3) The FOOD shall be cooked and served, served at any temperature if READY- TO-EAT, or discarded, within 4 hours from the point in time when the FOOD is removed from temperature control; P and
+           (4) The FOOD in unmarked containers or PACKAGES, or marked to exceed a 4- hour limit shall be discarded. P"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350119LimitGrowth_C',
+'"(C) A FOOD ESTABLISHMENT that serves a HIGHLY SUSCEPTIBLE POPULATION may not use time as specified under (A) or (B) of this section as the public health control for raw EGGS."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_A',
+'"A RETAIL FOOD ESTABLISHMENT shall obtain a VARIANCE from the REGULATORY AUTHORITY
+            as specified in Subpart 8-103.10 and under Subpart 8-103.11 before: Pf
+            (A) Smoking FOOD as a method of FOOD preservation rather than as a method of flavor enhancement; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_B',
+'"(B) Curing FOOD; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_C',
+'"(C) Using FOOD ADDITIVES or adding components such as vinegar: Pf
+            (1) As a method of FOOD preservation rather than as a method of flavor enhancement, Pf or
+            (2) To render a FOOD so that it is not POTENTIALLY HAZARDOUS; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_D',
+'"(D) Packaging FOOD using a REDUCED OXYGEN PACKAGING method except where the growth of a toxin formation by Clostridium botulinum and the growth of Listeria monocytogenes are controlled as specified in 3-502.12; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_E',
+'"(E) Operating a MOLLUSCAN SHELLFISH life-support system display tank used to store and display shellfish that are offered for human consumption; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_F',
+'"(F) Custom processing animals that are for personal use as FOOD and not for sale or service in a RETAIL FOOD ESTABLISHMENT; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_G',
+'"(G) Preparing FOOD by another method that is determined by the REGULATORY AUTHORITY to require a VARIANCE; Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350211LimitGrowth_H',
+'"(H) Sprouting seeds or beans. Pf',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350212LimitGrowth_A',
+'"(A) Except for a RETAIL FOOD ESTABLISHMENT that obtains a VARIANCE as specified under 3-502.11 a FOOD ESTABLISHMENT that packages POTENTIALLY HAZARDOUS FOOD (TIME /TEMPERATURE CONTROL FOR SAFETY FOOD) using a REDUCED OXYGEN PACKAGING method shall control the growth and toxin formation of Clostridium botulinum\n" +
+            "and the growth of Listeria monocytogenes. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350212LimitGrowth_B',
+'"(B) A FOOD ESTABLISHMENT that packages POTENTIALLY HAZARDOUS FOOD (TIME/TEMPERATURE CONTROL FOR SAFETY FOOD) using a REDUCED OXYGEN PACKAGING method shall have a HACCP PLAN that contains the information specified under 8-
+            201.14(D) and that: Pf
+            (1) Identifies the FOOD to be PACKAGED; Pf
+            (2) Except as specified under (C) - (E) of this section, requires that the PACKAGED FOOD shall be maintained at 5°C (41°F) or less and meet at least one of the following criteria: Pf
+            (a) Has an aw of 0.91 or less, (b) Has a pH of 4.6 or less, Pf
+            (c) Is a MEAT or POULTRY product cured at a FOOD PROCESSING PLANT
+            regulated by the U.S.D.A. using substances specified in 9 CFR
+            424.21, Use of food ingredients and sources of radiation, and is received in an intact package, Pf or
+            (d) Is a FOOD with a high level of competing organisms such as raw
+            MEAT, raw POULTRY or raw vegetables; Pf
+            (3) Describes how the PACKAGE shall be prominently and conspicuously labeled on the principal display panel in bold type on a contrasting background, with instructions to; Pf
+            (a) Maintain the FOOD at 5°C (41°F) or below, Pf and
+            (b) Discard the FOOD if within 14 calendar days of its PACKAGING it is not served for on-PREMISES consumption, or consumed if served or sold for off-PREMISES consumption; Pf
+            (4) Limits the refrigerated shelf life to no more than 14 calendar days from PACKAGING to consumption, except the time the product is maintained frozen, or the original manufacturers \"sell by\" or \"use by\" date, whichever occurs first: P
+            (5) Includes operational procedures that:
+            (a) Prohibit contacting READY-TO-EAT FOOD with bare hands, under
+            3-301.11(B) Pf
+            (b) Identify a designated work area and the method by which: Pf
+            (i) Physical barriers or methods of separation of raw FOODS and
+            READY-TO-EAT FOODS minimize cross contamination, Pf and
+            (ii) Access to the processing EQUIPMENT is limited to responsible trained personnel familiar with the potential HAZARDS of the operation, Pf and
+         (c) Delineate cleaning and SANITIZATION procedures for FOOD-CONTACT SURFACES; Pf and
+            (6) Describes the training program that ensures that the individual responsible for the REDUCED OXYGEN PACKAGING operation understands the: Pf
+            (a) Concepts required for a safe operation, Pf
+            (b) EQUIPMENT and facilities, Pf and
+         (c) Procedures specified under Subparagraph (B)(5) of this section and
+            Subparagraph 8-201.14(D). Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350212LimitGrowth_C',
+'"(C) Except for FISH that is frozen before, during, and after packaging, a FOOD ESTABLISHMENT may not package FISH using a REDUCED OXYGEN PACKAGING method P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350212LimitGrowth_D',
+'"(D) Except as specified under (C) of this section, a FOOD ESTABLISHMENT that
+          PACKAGES FOOD using a cook-chill or sous vide process shall:
+            (1) Implement a HACCP PLAN that contains the information as specified under
+            8-201.14(D); Pf
+            (2) Ensure the FOOD is:
+            (a) Prepared and consumed on the PREMISES, or prepared and consumed off the PREMISES but within the same business entity with no distribution or sale of the PACKAGED product to another business entity or the CONSUMER, Pf
+            (b) Cooked to heat all parts of the FOOD to a temperature and for a time as specified under paragraph 3-401.11, P
+            (c) Protected from contamination before and after cooking as specified under Parts 3-3 and 3-4, P
+            (d) Placed in a PACKAGE with an oxygen barrier and sealed before cooking, or placed in a PACKAGE and sealed immediately after cooking and before reaching a temperature below 57°C (135°F), P
+            (e) Cooled to 5°C (41°F) in the sealed PACKAGE or bag as specified under paragraph 3-501.14 and subsequently: P
+            (i) Cooled to 1°C (34°F) within 48 hours of reaching 5°C (41°F) and held at that temperature until consumed or discarded within 30 days after the date of PACKAGING; P
+            (ii) Cooled to 1°C (34°F) within 48 hours of reaching 5°C (41°F), removed from refrigeration equipment that maintains a 1°C (34°F) food temperature and then held at 5°C (41°F) or less for no more than 72 hours, at which time the FOOD must be consumed or discarded; P
+            (iii) Cooled to 3°C (38°F) or less within 24 hours of reaching 5°C (41°F) and held there for no more than 72 hours from PACKAGING, at which time the food must be consumed or discarded; P or
+            (iv) Held frozen with no shelf life restriction while frozen until consumed or used P
+            (f) Held in a refrigeration unit that is equipped with an electronic system that continuously monitors time and temperature and is visually examined for proper operation twice daily, Pf
+            (g) If transported off-site to a satellite location of the same business entity, equipped with verifiable electronic monitoring devices to ensure that times and temperatures are monitored during transportation, Pf and
+            (h) Labeled with the product name and the date PACKAGED; Pf and
+            (3) Maintain the records required to confirm that cooling and cold holding refrigeration time/temperature parameters are required as part of the HACCP PLAN and:
+            (a) Make such records available to the REGULATORY AUTHORITY upon request, Pf and
+            (b) Hold such records for at least 6 months; Pf and
+            (4) Implement written operational procedures as specified under (B)(5) of this section and a training program as specified under (B)(6) of this section. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C350212LimitGrowth_E',
+'"(E) A FOOD ESTABLISHMENT that PACKAGES cheese using a REDUCED OXYGEN PACKAGING method shall:
+            (1) Limit the cheeses PACKAGED to those that are commercially manufactured in a FOOD PROCESSING PLANT with no ingredients added in the FOOD ESTABLISHMENT and that meet the Standards of Identity as specified in 21
+            CFR 133.150 Hard cheeses, 21 CFR 133.169 Pasteurized process cheese or 21 CFR 133.187 Semisoft cheeses; P
+            (2) Have a HACCP PLAN that contains the information specified under 8-
+            201.14(D) and as specified under (B)(1), (B)(3)(a), (B)(5) and (B)(6) of this section; Pf
+            (3) Labels the PACKAGE on the principal display panel with a \"use by\" date that does not exceed 30 days from its packaging or the original manufacturers \"sell by\" or \"use by\" date, whichever occurs first; Pf and
+            (4) Discards the REDUCED OXYGEN PACKAGED cheese if it is not sold for off- PREMISES consumption or consumed within 30 calendar days of its PACKAGING. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360111IdentLabel',
+'"(A) Food shall be offered for human consumption in a way that does not mislead or misinform the CONSUMER."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360112IdentLabel_B',
+'"B) FOOD or COLOR ADDITIVES, colored overwraps, or lights may not be used to misrepresent the true appearance, color, or quality of a FOOD."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360211IdentLabel_A',
+'"(B) Label information shall include:
+            (1) The common name of the FOOD, or absent a common name, an adequately descriptive identity statement;
+            (2) If made from two or more ingredients, a list of ingredients in descending order of predominance by weight, including a declaration of artificial color or flavor and chemical preservatives, if contained in the FOOD;
+            (3) An accurate declaration of the quantity of contents;
+            (4) The name and place of business of the manufacturer, packer, or distributor;
+            and
+            (5) The name of the FOOD source for each MAJOR FOOD ALLERGEN contained in the FOOD unless the FOOD source is already part of the common or usual name of the respective ingredient (Effective January 1, 2011). Pf
+            (6) Except as exempted in the Federal Food, Drug, and Cosmetic Act 403 (Q)(3) - (5) nutrition labeling as specified in 21 CFR 101 – FOOD Labeling and 9 CFR 317 Subpart B Nutrition Labeling.
+            (7) For any salmonid FISH containing canthaxanthin as a COLOR ADDITIVE, the labeling of the bulk FISH container, including a list of ingredients, displayed on the retail container or by other written means, such as a counter card, that discloses the use of canthaxanthin"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360211IdentLabel_C',
+'"(C) Bulk FOOD that is available for CONSUMER self-dispensing shall be prominently labeled with the following information in plain view of the CONSUMER:
+            (1) The manufacturer’s or processor’s label that was provided with the FOOD;
+            or
+            (2) A card, sign, or other method of notification that includes the information specified under Subparagraphs (B)(1), (2), and (5) of this section."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360211IdentLabel_D',
+'"(D) Bulk, unPACKAGED FOODS such as bakery products and unpackaged FOODS that are portioned to CONSUMER specification need not be labeled if:
+            (1) A health, nutrient content, or other claim is not made; (2) There is no state or local LAWS requiring labeling; and
+            (3) The FOOD is manufactured or prepared on the PREMISES of the RETAIL FOOD ESTABLISHMENT or another RETAIL FOOD ESTABLISHMENT or a FOOD PROCESSING PLANT that is owned by the same PERSON and is regulated by the FOOD regulatory agency that has jurisdiction."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360212IdentLabel_A',
+'"(A) If required by THESE RULES AND REGULATIONS, CONSUMER warnings shall be provided."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360212IdentLabel_B',
+'"(B) RETAIL FOOD ESTABLISHMENT or manufacturers’ dating information on FOODS may not be concealed or altered."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360311IdentLabel_A',
+'"(A) Except as specified in 3-401.11(C) and Subparagraph 3-401.11(D)(4) and under
+            3-801.11(C), if an animal FOOD such as beef, EGGS, FISH, lamb, milk, pork, POULTRY, or shellfish is served or sold raw, undercooked, or without otherwise being processed to eliminate pathogens, either in READY-TO-EAT form or as an ingredient in another READY-TO-EAT FOOD, the PERMIT HOLDER shall inform CONSUMERS of the significantly increased RISK of consuming such FOODS by way of a DISCLOSURE and REMINDER, as specified in (B) and (C) of this section using brochures, deli case or menu advisories, label statements, table tents, placards,
+            or other effective written means. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360311IdentLabel_B',
+'"(B) DISCLOSURE shall include:
+            (1) A description of the animal-derived FOODS, such as \"oysters on the half shell (raw oysters),\" \"raw-EGG Caesar salad,\" and \"hamburgers (can be cooked to order)\"; Pf or
+            (2) Identification of the animal-derived FOODS by asterisking them to a footnote that states that the items are served raw or undercooked, or contain (or may contain) raw or undercooked ingredients. Pf"',
+3, 2, 1);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C360311IdentLabel_C',
+'"(C) REMINDER shall include asterisking the animal-derived FOODS requiring
+            DISCLOSURE to a footnote that states:
+            (1) Regarding the safety of these items, written information is available upon request; Pf
+            (2) Consuming raw or undercooked MEATS, POULTRY, seafood, shellfish, or
+            EGGS may increase your RISK of foodborne illness; Pf or
+            (3) Consuming raw or undercooked MEATS, POULTRY, seafood, shellfish, or EGGS may increase your RISK of foodborne illness, especially if you have certain medical conditions."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C370111Contaminated_A',
+'"(A) A FOOD that is unsafe, ADULTERATED, or not honestly presented as specified under Subpart 3-101.11 shall be discarded or reconditioned according to an APPROVED procedure. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C370111Contaminated_B',
+'"(B) FOOD that is not from an APPROVED source as specified under Subpart 3-
+            201.11.17 shall be discarded. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C370111Contaminated_C',
+'"(C) READY-TO-EAT FOOD that may have been contaminated by an EMPLOYEE who has been RESTRICTED or EXCLUDED as specified under 2-201.12 shall be discarded. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_A',
+'"In a RETAIL FOOD ESTABLISHMENT that serves a HIGHLY SUSCEPTIBLE POPULATION: (A) The following criteria apply to JUICE:
+            (1) For the purposes of this paragraph only, children who are age 9 or less and receive FOOD in a school, day care setting, or similar facility that provides custodial care are included as HIGHLY SUSCEPTIBLE POPULATIONS;
+            (2) PrePACKAGED JUICE or a prePACKAGED BEVERAGE containing JUICE, that bears a warning label as specified in 21 CFR, Section 101.17(g) Food Labeling, warning, notice, and safe handling statements, Juices that have not been specifically processed to prevent, reduce, or eliminate the presence of pathogens, or a PACKAGED JUICE or BEVERAGE containing JUICE, that bears a warning label as specified under Subparagraph 3-404.11(B) may not be served or offered for sale; P and
+            (3) UnPACKAGED JUICE that is prepared on the premises for service or sale in a READY-TO-EAT form shall be processed under a HACCP PLAN that contains the information specified under Subparagraphs 8-201.14(B) – (E) and as specified in 21 CFR Part 120 – Hazard Analysis and Critical Control Point (HACCP) Systems, Subpart B Pathogen Reduction, 120.24 Process controls. P"',
+3, 2, 2);
+
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_B',
+'"(B) Pasteurized EGGS or EGG products shall be substituted for raw EGGS in the preparation of: P
+            (1) FOODS such as Caesar salad, hollandaise or Béarnaise sauce, mayonnaise, eggnog, ice cream, and EGG-fortified BEVERAGES, P and
+            (2) Except as specified in Paragraph (E) of this section, recipes in which more than one EGG is broken and the EGGS are combined; P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_C',
+'"(C) The following FOODS may not be served or offered for sale in a READY-TO-EAT
+            form: P
+            (1) Raw animal FOODS such as raw FISH, raw-marinated FISH, raw MOLLUSCAN SHELLFISH, and steak tartare, P
+         (2) A partially cooked animal FOOD such as lightly cooked FISH, rare MEAT, soft- cooked EGGS that are made from raw shell EGGS, and meringue, P and
+            (3) Raw seed sprouts. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_D',
+'"(D) FOOD EMPLOYEES may not contact READY-TO-EAT FOOD as specified under 3-
+            301.11(B) and (D). P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_E',
+'"(E) Time only, as the public health control as specified under 3-501.19(D), may not be used for raw EGGS. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_F',
+'"(F) Subparagraph (B) (2) of this section does not apply if:
+            (1) The raw EGGS are combined immediately before cooking for one CONSUMER’S serving at a single meal, cooked as specified under Subparagraph 3-401.11(A)(1), and served immediately, such as an omelet, soufflé, or scrambled EGGS;
+            (2) The raw EGGS are combined as an ingredient immediately before baking and the EGGS are thoroughly cooked to a READY-TO-EAT form, such as a cake, muffin, or bread; or
+            (3) The preparation of the food is conducted under a HACCP PLAN that:
+            (a) Identifies the FOOD to be prepared
+            (b) Prohibits contacting READY-TO-EAT FOOD with bare hands,
+            (c) Includes specifications and practices that ensure:
+            (i) Salmonella Enteritidis growth is controlled before and after cooking, and
+            (ii) Salmonella Enteritidis is destroyed by cooking the EGGS according to the temperature and time specified in Subparagraph 3-401.11(A) (2),
+            (d) Contains the information specified under Subparagraph 8201.14 (D)
+            including procedures that:
+            (i) Control cross contamination of READY-TO-EAT FOOD with raw
+            EGGS, and
+            (ii) Delineate cleaning and SANITIZATION procedures for FOOD-
+            CONTACT SURFACES, and
+            (e) Describes the training program that ensures that the FOOD EMPLOYEE responsible for the preparation of the FOOD understands the procedures to be used."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_G',
+'"(G) Except as specified in paragraph (H) of this section, FOOD may be re-served as specified under Subparagraph 3-306.14(B) (1) and (2)."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C380111HighSusPop_H',
+'"(H) FOOD may not be re-served under the following conditions:\n" +
+            (1) Any FOOD served to patients or clients who are under contact precautions in medical isolation or quarantine, or protective environment isolation may not be re-served to others outside.
+            (2) Packages of FOOD from any patients, clients, or other CONSUMERS should not be re-served to PERSONS in protective environment isolation."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410113MConstrepair_C',
+'"(C) Solder and flux containing lead in excess of 0.2% may not be used as a FOOD-CONTACT SURFACE."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410114MConstrepair_A',
+'"(A) Except as specified in Paragraph (B) of this section, copper and copper alloys such as brass may not be used in contact with a FOOD that has a pH below 6 such as vinegar, fruit JUICE, or wine or for a fitting or tubing installed between a
+            backflow prevention device and a carbonator. P"',
+3, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410114MConstrepair_B',
+'"(B) Copper and copper alloys may be used in contact with beer brewing ingredients that have a pH below 6 in the pre-fermentation and fermentation steps of a beer brewing operation such as a brewpub or microbrewery."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410115MConstrepair',
+'"Galvanized metal may not be used for UTENSILS or FOOD-CONTACT SURFACES of
+            EQUIPMENT that are used in contact with acidic FOOD. P"',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410116MConstrepair',
+'"Sponges may not be used in contact with cleaned and SANITIZED or in-use FOOD-CONTACT SURFACES."',
+3, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410117MConstrepair_B',
+'"(B) Hard maple or an equivalently hard, close-grained wood may be used for:
+            (1) Cutting boards; cutting blocks; bakers tables; and UTENSILS such as rolling pins, doughnut dowels, salad bowls, and chopsticks; and         (2) Wooden paddles used in confectionery operations for pressure scraping
+            kettles when manually preparing confections at a temperature of 110 C
+            (230 F) or above."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410117MConstrepair_C',
+'"(C) Whole, uncut, raw fruits and vegetables, and nuts in the shell may be kept in the wood shipping containers in which they were received, until the fruits, vegetables, or nuts are used."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410117MConstrepair_D',
+'"(D) If the nature of the FOOD requires removal of rinds, peels, husks, or shells before consumption, the whole, uncut, raw FOOD may be kept in:
+            (1) Untreated wood containers; or
+            (2) Treated wood containers if the containers are treated with a preservative that meets the requirements specified in 21 CFR 178.3800 Preservatives for wood."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410118MConstrepair',
+'"Multiuse KITCHENWARE such as frying pans, griddles, sauce pans, cookie sheets, and waffle bakers that have a perfluorocarbon resin coating shall be used with non-scoring or non-scratching UTENSILS and cleaning aids."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410119MConstrepair',
+'"NonFOOD-CONTACT SURFACES of EQUIPMENT that are exposed to splash, spillage, or other FOOD soiling or that require frequent cleaning shall be constructed of a CORROSION- RESISTANT, nonabsorbent, and SMOOTH material."',
+4, 2, 3);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410211MConstrepair_A',
+'"Materials that are used to make SINGLE-SERVICE and SINGLE-USE ARTICLES: (A) May not:
+            (1) Allow the migration of deleterious substances, P or
+            (2) Impart colors, odors, or tastes to FOOD; and"',
+4, 2, 2);
+
+INSERT INTO Regulation (RegulationNumber, RegulationSpecific,
+ChapterId, RegulationControlPointId, RegulationLevelId)
+VALUES ('C410211MConstrepair_B',
+'"B) Shall be:
+            (1) Safe, P and (2) Clean."',
+4, 2, 3);
 
 
 
