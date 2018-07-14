@@ -4,6 +4,7 @@ package controllers;
 import models.Regulation;
 import models.RegulationControlPoint;
 import models.RegulationControlTotal;
+import models.RegulationLevel;
 import play.data.FormFactory;
 import play.data.DynamicForm;
 import play.db.jpa.JPAApi;
@@ -85,6 +86,38 @@ public class RegulationController extends Controller
         return ok(views.html.regulationouttotal.render(peopleCount, processCount, placeCount));
 
     }
+
+    public Result getRegulationLevelCount()
+    {
+        DynamicForm form = formFactory.form().bindFromRequest();
+        String pfText= form.get("Pf");
+        String pText = form.get("P");
+        String coreText = form.get("Core");
+
+        int pfCount = 0;
+        int pCount = 0;
+        int coreCount = 0;
+
+        if (pfText != null)
+        {
+            pfCount = Integer.parseInt(pfText);
+        }
+
+        if (pText != null)
+        {
+            pCount = Integer.parseInt(pText);
+        }
+
+        if (coreText != null)
+        {
+            coreCount = Integer.parseInt(coreText);
+        }
+
+        return ok(views.html.regulationlevel.render(pfCount, pCount, coreCount));
+
+
+    }
+
 
     @Transactional
     public Result postRegulationOutCount()

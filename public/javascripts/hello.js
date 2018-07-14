@@ -8,13 +8,12 @@ var myPieChart = new Chart(ctx,{
          datasets: [{
              label: 'totals',
              data: data,
-             backgroundColor: [,
+             backgroundColor: [
                  'rgb(0, 255, 255)',
                  'rgb(255, 255, 26)',
                  'rgb(191, 0, 255)'
                  ],
-             borderColor: [,
-                 'rgb(0, 0, 0)',
+             borderColor: [
                  'rgb(0, 0, 0)',
                  'rgb(0, 0, 0)',
                  'rgb(0, 0, 0)'
